@@ -35,8 +35,8 @@ $allowed_pages = [
     'blog' => 'blog.php',
     'blog-post' => 'blog-post.php',
     'contact' => 'contact.php',
-    'impressum' => '../legal/impressum.php',
-    'datenschutz' => '../legal/datenschutz.php',
+    'impressum' => 'impressum.php',
+    'datenschutz' => 'datenschutz.php',
 ];
 
 // 404 Fallback
