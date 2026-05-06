@@ -38,5 +38,9 @@
   
   "home_cta_title": "Bereit für Ihr nächstes Projekt?",
   "home_cta_sub": "Lassen Sie uns zusammenarbeiten, um etwas Außergewöhnliches aufzubauen.",
-  "home_cta_button": "Kontaktieren Sie uns heute"
+  "home_cta_button": "Kontaktieren Sie uns heute",
+  "service_web": "Webentwicklung",
+  "service_design": "UI/UX Design",
+  "service_strategy": "Digitale Strategie",
+  "service_app": "Mobile Anwendungen"
 }

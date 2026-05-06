@@ -32,16 +32,10 @@
             <div>
                 <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase mb-4" data-i18n="nav_services"><?php echo t('nav_services'); ?></h3>
                 <ul class="space-y-3">
-                    <?php 
-                    $footer_services = require __DIR__ . '/../data/services.php';
-                    foreach($footer_services as $s): 
-                    ?>
-                    <li>
-                        <a href="/?page=service-detail&id=<?php echo $s['id']; ?>" class="text-gray-400 hover:text-white transition text-sm">
-                            <?php echo $lang === 'de' ? $s['title_de'] : $s['title_en']; ?>
-                        </a>
-                    </li>
-                    <?php endforeach; ?>
+                    <li><a href="/?page=services" class="text-gray-400 hover:text-white transition text-sm" data-i18n="service_web"><?php echo t('service_web'); ?></a></li>
+                    <li><a href="/?page=services" class="text-gray-400 hover:text-white transition text-sm" data-i18n="service_design"><?php echo t('service_design'); ?></a></li>
+                    <li><a href="/?page=services" class="text-gray-400 hover:text-white transition text-sm" data-i18n="service_strategy"><?php echo t('service_strategy'); ?></a></li>
+                    <li><a href="/?page=services" class="text-gray-400 hover:text-white transition text-sm" data-i18n="service_app"><?php echo t('service_app'); ?></a></li>
                 </ul>
             </div>
 

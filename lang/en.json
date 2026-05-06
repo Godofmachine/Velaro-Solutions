@@ -38,5 +38,9 @@
   
   "home_cta_title": "Ready to start your next project?",
   "home_cta_sub": "Let's work together to build something extraordinary.",
-  "home_cta_button": "Contact Us Today"
+  "home_cta_button": "Contact Us Today",
+  "service_web": "Web Development",
+  "service_design": "UI/UX Design",
+  "service_strategy": "Digital Strategy",
+  "service_app": "Mobile Applications"
 }
