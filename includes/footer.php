@@ -7,9 +7,9 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
             
             <!-- Brand & Mission -->
-            <div class="col-span-1 md:col-span-1">
-                <a href="/" class="text-2xl font-serif font-bold text-white flex items-center gap-3 group mb-4 tracking-tight">
-                    <svg class="w-8 h-8 text-accent transform group-hover:-rotate-5 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+            <div class="col-span-1 md:col-span-2">
+                <a href="/" class="text-2xl font-serif font-bold text-white flex items-center gap-4 group mb-6 tracking-tight">
+                    <svg class="w-14 h-14 text-accent transform group-hover:-rotate-5 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
                     <span data-i18n="site_title"><?php echo t('site_title'); ?></span>
                 </a>
                 <p class="text-gray-400 text-sm leading-relaxed mb-6" data-i18n="footer_about">
