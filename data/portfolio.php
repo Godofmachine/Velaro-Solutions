@@ -14,7 +14,7 @@ return [
     [
         'id' => 2,
         'category' => 'branding',
-        'image_id' => '1556761175-5973dc0f32b7',
+        'image_id' => '1551434678-e076c223a692',
         'title_en' => 'Corporate Identity Overhaul',
         'title_de' => 'Überarbeitung der Corporate Identity',
         'client' => 'FinServe Group',
@@ -24,7 +24,7 @@ return [
     [
         'id' => 3,
         'category' => 'app',
-        'image_id' => '1512941937669-4e117fb57be7',
+        'image_id' => '1511688878353-3a2f5be94cd7',
         'title_en' => 'Fitness Tracking App',
         'title_de' => 'Fitness-Tracking-App',
         'client' => 'FitLife App',
