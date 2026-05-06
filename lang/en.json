@@ -70,10 +70,11 @@
     "footer_links_title": "Quick Links",
     "footer_contact_title": "Contact",
     "footer_legal_title": "Legal Compliance",
-    "footer_impressum": "Legal Notice",
-    "footer_datenschutz": "Privacy Policy",
+    "footer_impressum": "Impressum",
+    "footer_datenschutz": "Datenschutz",
     "footer_rights": "All rights reserved.",
     "cookie_text": "We use cookies to ensure the basic functionality of the website and to enhance your online experience. For more information, please read our <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Privacy Policy<\/a>.",
     "cookie_accept": "Accept All",
-    "cookie_decline": "Essential Only"
+    "cookie_decline": "Essential Only",
+    "firm_name": "Velaro Law Firm"
 }

@@ -7,7 +7,7 @@
         <div class="prose prose-lg prose-blue text-gray-700">
             <p><strong>Angaben gemäß § 5 TMG:</strong></p>
             <p>
-                Velaro Law Firm<br>
+                Velaro Rechtsanwälte<br>
                 Friedrichstraße 123<br>
                 10117 Berlin<br>
                 Deutschland

@@ -60,7 +60,7 @@ global $lang, $page;
             <div class="flex-shrink-0 flex items-center">
                 <a href="/" class="text-2xl font-serif font-bold text-primary flex items-center gap-3 group tracking-tight">
                     <svg class="w-8 h-8 text-accent transform group-hover:scale-105 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
-                    <span>Velaro Law Firm</span>
+                    <span data-i18n="firm_name"><?php echo t('firm_name'); ?></span>
                 </a>
             </div>
 
