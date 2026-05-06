@@ -23,7 +23,7 @@ return [
 
     // Home - About Section
     'home_about_title' => 'Jahrzehntelange Exzellenz',
-    'home_about_text' => 'Bei Velaro verbinden wir fundierte juristische Expertise mit einem pragmatischen unternehmerischen Ansatz. Unsere Anwälte sind anerkannte Experten auf ihren Gebieten und sorgen dafür, dass Sie nicht nur rechtlichen Rat, sondern strategische Vorteile erhalten.',
+    'home_about_text' => 'Bei der Velaro Law Firm verbinden wir fundierte juristische Expertise mit einem pragmatischen unternehmerischen Ansatz. Unsere Anwälte sind anerkannte Experten auf ihren Gebieten und sorgen dafür, dass Sie nicht nur rechtlichen Rat, sondern strategische Vorteile erhalten.',
     'home_about_cta' => 'Lernen Sie unsere Anwälte kennen',
 
     // Home - Stats
@@ -40,7 +40,7 @@ return [
     'about_title' => 'Über die Kanzlei',
     'about_subtitle' => 'Integrität, Diskretion und unermüdlicher Einsatz.',
     'our_story_title' => 'Unsere Geschichte',
-    'our_story_p1' => 'Gegründet im Jahr 1999, hat sich Velaro von einer Boutique-Kanzlei zu einer Full-Service-Wirtschaftskanzlei entwickelt, die nationale und internationale Mandanten vertritt.',
+    'our_story_p1' => 'Gegründet im Jahr 1999, hat sich die Velaro Law Firm von einer Boutique-Kanzlei zu einer Full-Service-Wirtschaftskanzlei entwickelt, die nationale und internationale Mandanten vertritt.',
     'our_story_p2' => 'Unsere Philosophie ist einfach: Konflikte vermeiden, wo möglich, und sie gewinnen, wo nötig. Wir verstehen uns als strategischer Partner unserer Mandanten.',
     'mission_title' => 'Unsere Mission',
     'mission_p' => 'Klare, umsetzbare rechtliche Beratung zu bieten, die unsere Mandanten in die Lage versetzt, sichere unternehmerische Entscheidungen zu treffen.',
@@ -90,7 +90,7 @@ return [
     'gdpr_consent_label' => 'Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gemäß der <a href="/?page=datenschutz" class="text-accent hover:underline">Datenschutzerklärung</a> verarbeitet werden.',
 
     // Footer
-    'footer_about' => 'Velaro ist eine renommierte deutsche Rechtsanwaltskanzlei, die sich der erstklassigen rechtlichen Beratung von Unternehmen und Privatpersonen widmet.',
+    'footer_about' => 'Velaro Law Firm ist eine renommierte deutsche Rechtsanwaltskanzlei, die sich der erstklassigen rechtlichen Beratung von Unternehmen und Privatpersonen widmet.',
     'footer_links_title' => 'Schnelllinks',
     'footer_contact_title' => 'Kontakt',
     'footer_legal_title' => 'Rechtliches',
