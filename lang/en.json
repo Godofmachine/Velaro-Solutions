@@ -76,8 +76,9 @@
     "footer_impressum": "Legal Notice",
     "footer_datenschutz": "Privacy Policy",
     "footer_rights": "All rights reserved.",
-    "cookie_text": "We use cookies to ensure the basic functionality of the website and to enhance your online experience. For more information, please read our <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Privacy Policy<\/a>.",
+    "cookie_title": "Cookie Preference",
+    "cookie_desc": "We use cookies to ensure the basic functionality of the website and to enhance your online experience. For more information, please read our <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Privacy Policy<\/a>.",
     "cookie_accept": "Accept All",
-    "cookie_decline": "Essential Only",
+    "cookie_reject": "Essential Only",
     "firm_name": "Velaro Law Firm"
 }

@@ -76,8 +76,9 @@
     "footer_impressum": "Impressum",
     "footer_datenschutz": "Datenschutz",
     "footer_rights": "Alle Rechte vorbehalten.",
-    "cookie_text": "Wir verwenden Cookies, um die grundlegende Funktionalit\u00e4t der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Weitere Informationen finden Sie in unserer <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Datenschutzerkl\u00e4rung<\/a>.",
+    "cookie_title": "Cookie-Einstellungen",
+    "cookie_desc": "Wir verwenden Cookies, um die grundlegende Funktionalit\u00e4t der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Weitere Informationen finden Sie in unserer <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Datenschutzerkl\u00e4rung<\/a>.",
     "cookie_accept": "Alle akzeptieren",
-    "cookie_decline": "Nur essenzielle",
+    "cookie_reject": "Nur essenzielle",
     "firm_name": "Velaro Rechtsanw\u00e4lte"
 }
