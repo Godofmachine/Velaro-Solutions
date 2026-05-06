@@ -3,7 +3,7 @@
 return [
     [
         'slug' => 'future-of-web-development-2026',
-        'image_url' => 'https://images.unsplash.com/photo-1517694476052-195816527013?auto=format&fit=crop&w=1200&q=80',
+        'image_url' => 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
         'is_featured' => true,
         'date' => '2026-05-01',
         'author' => 'Sarah Schmidt',
