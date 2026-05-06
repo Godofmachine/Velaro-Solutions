@@ -24,7 +24,7 @@ return [
     [
         'id' => 3,
         'category' => 'app', // 'app' -> 'Litigation'
-        'image_url' => 'https://images.unsplash.com/photo-1505664194779-8beaceb59234?auto=format&fit=crop&w=800&q=80',
+        'image_url' => 'https://images.unsplash.com/photo-1589216532372-1c2a367900d9?auto=format&fit=crop&w=800&q=80',
         'title_en' => 'Landmark Trademark Dispute',
         'title_de' => 'Grundsatzstreit im Markenrecht',
         'client' => 'Tech Startup',
