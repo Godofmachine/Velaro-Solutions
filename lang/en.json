@@ -1,0 +1,42 @@
+{
+  "site_title": "Velaro Solutions",
+  "nav_home": "Home",
+  "nav_about": "About Us",
+  "nav_services": "Services",
+  "nav_portfolio": "Portfolio",
+  "nav_blog": "Blog",
+  "nav_contact": "Contact",
+  "lang_en": "English",
+  "lang_de": "Deutsch",
+  "footer_impressum": "Imprint",
+  "footer_datenschutz": "Privacy Policy",
+  "cookie_title": "We value your privacy",
+  "cookie_desc": "We use cookies to enhance your browsing experience and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+  "cookie_accept": "Accept All",
+  "cookie_reject": "Reject",
+  "page_not_found": "Page not found.",
+  "back_home": "Back to Home",
+  
+  "home_hero_title": "Elevating Digital Experiences",
+  "home_hero_sub": "We build scalable, high-performance digital solutions tailored to your business needs.",
+  "home_hero_cta1": "Our Services",
+  "home_hero_cta2": "Get in Touch",
+  
+  "home_stats_clients": "Happy Clients",
+  "home_stats_projects": "Projects Completed",
+  "home_stats_years": "Years of Excellence",
+  
+  "home_services_title": "What We Do",
+  "home_services_sub": "Comprehensive solutions for modern businesses",
+  "learn_more": "Learn more",
+  
+  "home_about_title": "Who We Are",
+  "home_about_text": "Velaro Solutions is a premium digital agency. We blend strategy, design, and technology to help European businesses thrive in the digital age. Our team of experts is dedicated to delivering excellence in every project.",
+  "home_about_cta": "Discover Our Story",
+  
+  "home_testimonials_title": "Client Success",
+  
+  "home_cta_title": "Ready to start your next project?",
+  "home_cta_sub": "Let's work together to build something extraordinary.",
+  "home_cta_button": "Contact Us Today"
+}

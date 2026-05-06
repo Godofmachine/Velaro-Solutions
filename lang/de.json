@@ -1,0 +1,42 @@
+{
+  "site_title": "Velaro Solutions",
+  "nav_home": "Startseite",
+  "nav_about": "Über Uns",
+  "nav_services": "Leistungen",
+  "nav_portfolio": "Portfolio",
+  "nav_blog": "Blog",
+  "nav_contact": "Kontakt",
+  "lang_en": "English",
+  "lang_de": "Deutsch",
+  "footer_impressum": "Impressum",
+  "footer_datenschutz": "Datenschutz",
+  "cookie_title": "Wir respektieren Ihre Privatsphäre",
+  "cookie_desc": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern und unseren Datenverkehr zu analysieren. Wenn Sie auf \"Alle akzeptieren\" klicken, stimmen Sie der Verwendung von Cookies zu.",
+  "cookie_accept": "Alle akzeptieren",
+  "cookie_reject": "Ablehnen",
+  "page_not_found": "Seite nicht gefunden.",
+  "back_home": "Zurück zur Startseite",
+  
+  "home_hero_title": "Digitale Erlebnisse auf neuem Niveau",
+  "home_hero_sub": "Wir entwickeln skalierbare, hochleistungsfähige digitale Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+  "home_hero_cta1": "Unsere Leistungen",
+  "home_hero_cta2": "Kontakt aufnehmen",
+  
+  "home_stats_clients": "Zufriedene Kunden",
+  "home_stats_projects": "Abgeschlossene Projekte",
+  "home_stats_years": "Jahre Erfahrung",
+  
+  "home_services_title": "Was wir tun",
+  "home_services_sub": "Umfassende Lösungen für moderne Unternehmen",
+  "learn_more": "Mehr erfahren",
+  
+  "home_about_title": "Wer wir sind",
+  "home_about_text": "Velaro Solutions ist eine Premium-Digitalagentur. Wir verbinden Strategie, Design und Technologie, um europäischen Unternehmen im digitalen Zeitalter zum Erfolg zu verhelfen. Unser Expertenteam widmet sich der Bereitstellung von Exzellenz in jedem Projekt.",
+  "home_about_cta": "Entdecken Sie unsere Geschichte",
+  
+  "home_testimonials_title": "Kundenerfolg",
+  
+  "home_cta_title": "Bereit für Ihr nächstes Projekt?",
+  "home_cta_sub": "Lassen Sie uns zusammenarbeiten, um etwas Außergewöhnliches aufzubauen.",
+  "home_cta_button": "Kontaktieren Sie uns heute"
+}
