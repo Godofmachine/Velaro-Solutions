@@ -92,8 +92,8 @@ $services = require __DIR__ . '/../data/services.php';
             </div>
             <div class="lg:w-1/2">
                 <h2 class="text-sm font-bold text-accent tracking-widest uppercase mb-3" data-i18n="home_about_title"><?php echo t('home_about_title'); ?></h2>
-                <p class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-snug">
-                    Driving innovation for modern European businesses.
+                <p class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-snug" data-i18n="home_about_headline">
+                    <?php echo t('home_about_headline'); ?>
                 </p>
                 <p class="text-gray-600 text-lg leading-relaxed mb-8" data-i18n="home_about_text">
                     <?php echo t('home_about_text'); ?>
