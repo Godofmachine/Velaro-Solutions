@@ -2,6 +2,14 @@
 
 <section class="py-24 bg-white dark:bg-neutral-dark min-h-screen transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex gap-6 mb-12 border-b border-gray-100 dark:border-slate-800">
+            <a href="/?page=impressum" class="<?php echo $page === 'impressum' ? 'text-accent font-bold border-b-2 border-accent' : 'text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white'; ?> pb-4 text-sm uppercase tracking-widest transition">
+                <?php echo $lang === 'de' ? 'Impressum' : 'Legal Notice'; ?>
+            </a>
+            <a href="/?page=datenschutz" class="<?php echo $page === 'datenschutz' ? 'text-accent font-bold border-b-2 border-accent' : 'text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white'; ?> pb-4 text-sm uppercase tracking-widest transition">
+                <?php echo $lang === 'de' ? 'Datenschutz' : 'Privacy Policy'; ?>
+            </a>
+        </nav>
         <h1 class="text-4xl font-serif font-bold text-primary dark:text-white mb-12 border-b border-gray-200 dark:border-slate-800 pb-4">
             <?php echo $lang === 'de' ? 'Impressum' : 'Legal Notice'; ?>
         </h1>
