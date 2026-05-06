@@ -58,7 +58,7 @@ $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en
             
             <div class="bg-primary dark:bg-[#050B14] p-12 rounded border-t-4 border-accent text-center shadow-2xl relative overflow-hidden reveal-hidden delay-200">
                 <div class="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1589578594247-505664194779?auto=format&fit=crop&w=800&q=80" alt="Legal background" class="w-full h-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="Legal background" class="w-full h-full object-cover">
                 </div>
                 <div class="relative z-10">
                     <h3 class="text-3xl font-serif font-bold text-white mb-4"><?php echo $lang === 'de' ? 'Benötigen Sie rechtlichen Beistand?' : 'Need Legal Assistance?'; ?></h3>
