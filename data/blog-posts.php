@@ -15,7 +15,7 @@ return [
     ],
     [
         'slug' => 'maximizing-roi-with-digital-strategy',
-        'image_id' => '1432888117246-f65dc246200a',
+        'image_id' => '1460925895990-23f03b73f58a',
         'date' => '2026-04-15',
         'author' => 'Markus Weber',
         'title_en' => 'Maximizing ROI with a Solid Digital Strategy',
