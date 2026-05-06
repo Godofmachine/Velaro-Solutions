@@ -74,8 +74,48 @@ $content = $lang === 'de' ? $current_post['content_de'] : $current_post['content
         <div class="mt-16 text-center reveal-hidden delay-400">
             <a href="/?page=blog" class="inline-flex items-center text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white transition font-medium border-b border-transparent hover:border-primary dark:hover:border-white pb-1">
                 <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-                <span data-i18n="service_back_link"><?php echo t('service_back_link'); ?></span>
+                <span data-i18n="blog_back_link"><?php echo t('blog_back_link'); ?></span>
             </a>
         </div>
     </div>
 </article>
+
+<!-- Suggested Reading -->
+<section class="py-24 bg-neutral-light dark:bg-[#050B14] border-t border-gray-200 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-serif font-bold text-primary dark:text-white mb-12 text-center" data-i18n="blog_related_heading"><?php echo t('blog_related_heading'); ?></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <?php 
+            // Filter out current post and take 3 random ones
+            $other_posts = array_filter($blog_posts, function($p) use ($slug) {
+                return $p['slug'] !== $slug;
+            });
+            shuffle($other_posts);
+            $suggested_posts = array_slice($other_posts, 0, 3);
+            
+            foreach($suggested_posts as $post): 
+                $post_title = $lang === 'de' ? $post['title_de'] : $post['title_en'];
+                $post_excerpt = $lang === 'de' ? $post['excerpt_de'] : $post['excerpt_en'];
+            ?>
+            <article class="bg-white dark:bg-slate-900 rounded overflow-hidden shadow-sm hover:shadow-xl dark:shadow-none border border-gray-100 dark:border-slate-800 dark:hover:border-slate-700 transition-all duration-300 group flex flex-col reveal-hidden">
+                <div class="h-48 overflow-hidden">
+                    <img src="<?php echo $post['image_url']; ?>" alt="Blog Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-serif font-bold text-primary dark:text-white mb-3 group-hover:text-accent transition leading-snug">
+                        <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>">
+                            <?php echo $post_title; ?>
+                        </a>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 font-light"><?php echo $post_excerpt; ?></p>
+                    <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>" class="text-accent font-bold uppercase tracking-wider text-xs mt-auto flex items-center gap-2">
+                        <span data-i18n="blog_read_article"><?php echo t('blog_read_article'); ?></span>
+                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </article>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>

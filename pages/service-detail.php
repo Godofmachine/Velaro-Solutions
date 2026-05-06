@@ -19,13 +19,16 @@ $title = $lang === 'de' ? $current_service['title_de'] : $current_service['title
 $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en'];
 ?>
 
-<section class="py-24 bg-neutral-light dark:bg-neutral-dark border-b border-gray-200 dark:border-slate-800 transition-colors duration-300">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-hidden">
-        <div class="w-20 h-20 mx-auto bg-white dark:bg-slate-900 text-primary dark:text-white border-2 border-accent rounded-full flex items-center justify-center mb-8 shadow-sm">
+<section class="relative py-24 bg-primary dark:bg-[#050B14] overflow-hidden transition-colors duration-300">
+    <div class="absolute inset-0 z-0 opacity-20">
+        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1920&q=80" alt="Law Library" class="w-full h-full object-cover" />
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-hidden">
+        <div class="w-20 h-20 mx-auto bg-white/10 dark:bg-slate-900/50 text-white border-2 border-accent rounded-full flex items-center justify-center mb-8 shadow-sm">
             <?php echo $current_service['icon']; ?>
         </div>
-        <h1 class="text-4xl md:text-6xl font-serif font-bold text-primary dark:text-white mb-6 tracking-tight delay-100 reveal-hidden"><?php echo $title; ?></h1>
-        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed font-light delay-200 reveal-hidden"><?php echo $desc; ?></p>
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6 tracking-tight delay-100 reveal-hidden"><?php echo $title; ?></h1>
+        <p class="text-xl md:text-2xl text-gray-300 dark:text-gray-400 leading-relaxed font-light delay-200 reveal-hidden"><?php echo $desc; ?></p>
     </div>
 </section>
 
@@ -33,7 +36,7 @@ $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div class="reveal-hidden">
-                <h2 class="text-3xl font-serif font-bold text-primary dark:text-white mb-8" data-i18n="service_detail_features"><?php echo t('service_detail_features') ?: ($lang === 'de' ? 'Unsere Kernkompetenzen' : 'Core Competencies'); ?></h2>
+                <h2 class="text-3xl font-serif font-bold text-primary dark:text-white mb-8" data-i18n="service_detail_features"><?php echo t('service_detail_features'); ?></h2>
                 <ul class="space-y-6">
                     <li class="flex items-start gap-4">
                         <div class="mt-1 w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center shrink-0">

@@ -42,6 +42,7 @@
     "service_learn_more": "Mehr erfahren",
     "service_not_found": "Rechtsgebiet nicht gefunden.",
     "service_back_link": "Zur\u00fcck zu den Rechtsgebieten",
+    "service_detail_features": "Unsere Kernkompetenzen",
     "portfolio_title": "F\u00e4lle & Erfolge",
     "portfolio_subtitle": "Eine Auswahl unserer j\u00fcngsten anonymisierten juristischen Erfolge und erfolgreichen Transaktionen.",
     "portfolio_all": "Alle F\u00e4lle",
@@ -56,6 +57,7 @@
     "blog_read_article": "Artikel lesen",
     "blog_post_not_found": "Artikel nicht gefunden.",
     "blog_back_link": "Zur\u00fcck zu den Artikeln",
+    "blog_related_heading": "Weitere Artikel",
     "contact_title": "Kontaktieren Sie uns",
     "contact_subtitle": "Vereinbaren Sie eine vertrauliche Beratung mit einem unserer Spezialisten.",
     "contact_info_title": "Kanzleistandort",
@@ -80,5 +82,6 @@
     "cookie_desc": "Wir verwenden Cookies, um die grundlegende Funktionalit\u00e4t der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Weitere Informationen finden Sie in unserer <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Datenschutzerkl\u00e4rung<\/a>.",
     "cookie_accept": "Alle akzeptieren",
     "cookie_reject": "Nur essenzielle",
-    "firm_name": "Velaro Rechtsanw\u00e4lte"
+    "firm_name": "Velaro Rechtsanw\u00e4lte",
+    "firm_tagline": "Wirtschaftskanzlei"
 }

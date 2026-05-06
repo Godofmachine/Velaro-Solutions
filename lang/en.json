@@ -42,6 +42,7 @@
     "service_learn_more": "Read more",
     "service_not_found": "Practice area not found.",
     "service_back_link": "Back to Practice Areas",
+    "service_detail_features": "Core Competencies",
     "portfolio_title": "Case Studies & Successes",
     "portfolio_subtitle": "A selection of our recent anonymized legal victories and successful transactions.",
     "portfolio_all": "All Cases",
@@ -56,6 +57,7 @@
     "blog_read_article": "Read Article",
     "blog_post_not_found": "Article not found.",
     "blog_back_link": "Back to Articles",
+    "blog_related_heading": "Suggested Reading",
     "contact_title": "Contact Our Office",
     "contact_subtitle": "Request a confidential consultation with one of our specialists.",
     "contact_info_title": "Office Locations",
@@ -80,5 +82,6 @@
     "cookie_desc": "We use cookies to ensure the basic functionality of the website and to enhance your online experience. For more information, please read our <a href=\"\/?page=datenschutz\" class=\"text-accent hover:underline\">Privacy Policy<\/a>.",
     "cookie_accept": "Accept All",
     "cookie_reject": "Essential Only",
-    "firm_name": "Velaro Law Firm"
+    "firm_name": "Velaro Law Firm",
+    "firm_tagline": "Corporate & Business Law Firm"
 }
