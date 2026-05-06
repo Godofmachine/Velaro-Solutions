@@ -1,9 +1,9 @@
 <?php if (!defined('VELARO_SITE')) exit; ?>
 
 <section class="py-20 bg-neutral-light border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12">
-        <h1 class="text-5xl font-bold text-primary mb-6" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></h1>
-        <p class="text-xl max-w-2xl mx-auto font-light text-gray-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 reveal-hidden">
+        <h1 class="text-5xl font-bold text-primary mb-6 tracking-tight" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></h1>
+        <p class="text-xl max-w-2xl mx-auto font-light text-gray-600 delay-100 reveal-hidden">
             <?php echo $lang === 'de' ? 'Wir freuen uns darauf, von Ihnen zu hören.' : 'We look forward to hearing from you.'; ?>
         </p>
     </div>
@@ -14,7 +14,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             <!-- Contact Form -->
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+            <div class="bg-white p-10 md:p-12 rounded-[2.5rem] shadow-2xl border border-gray-100 reveal-hidden delay-100">
                 <h2 class="text-3xl font-bold text-primary mb-8" data-i18n="contact_form_title"><?php echo t('contact_form_title'); ?></h2>
                 
                 <form id="contactForm" class="space-y-6">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" id="submitBtn" class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-900 transition flex justify-center items-center gap-2">
+                    <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-primary to-blue-900 text-white py-4 rounded-xl font-bold hover:shadow-[0_10px_20px_rgba(27,43,91,0.3)] transform hover:-translate-y-1 transition-all flex justify-center items-center gap-2">
                         <span data-i18n="contact_send"><?php echo t('contact_send'); ?></span>
                         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </button>
@@ -67,13 +67,16 @@
             </div>
 
             <!-- Contact Info & Image -->
-            <div class="flex flex-col">
+            <div class="flex flex-col reveal-hidden delay-300">
                 <div class="flex-grow">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Office Building" class="w-full h-64 object-cover rounded-3xl shadow-md mb-8" />
+                    <div class="relative mb-12">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-accent/20 to-primary/10 rounded-[3rem] transform rotate-3 blur-sm"></div>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Office Building" class="relative w-full h-80 object-cover rounded-[2.5rem] shadow-xl" />
+                    </div>
                     
-                    <div class="space-y-8">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center shrink-0">
+                    <div class="space-y-10">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-blue-50/50 backdrop-blur text-accent rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-all shadow-sm">
                                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
                             <div>
@@ -82,8 +85,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center shrink-0">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-blue-50/50 backdrop-blur text-accent rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-all shadow-sm">
                                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             </div>
                             <div>
@@ -92,8 +95,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-50 text-accent rounded-full flex items-center justify-center shrink-0">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-blue-50/50 backdrop-blur text-accent rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-all shadow-sm">
                                 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             </div>
                             <div>

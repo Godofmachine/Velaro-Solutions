@@ -19,7 +19,7 @@ global $lang, $page;
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS (CDN for Development, switch to build for Prod) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,7 +36,7 @@ global $lang, $page;
                         }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
             }
@@ -52,7 +52,7 @@ global $lang, $page;
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:text-primary focus:z-50">Skip to content</a>
 
 <!-- Navigation -->
-<header id="main-header" class="fixed w-full top-0 z-40 transition-all duration-300 bg-white shadow-sm">
+<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
@@ -92,7 +92,7 @@ global $lang, $page;
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl border-t border-gray-100 absolute w-full">
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-100 absolute w-full transition-all">
         <div class="px-4 pt-2 pb-6 space-y-1">
             <a href="/" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'home' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_home"><?php echo t('nav_home'); ?></a>
             <a href="/?page=about" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'about' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_about"><?php echo t('nav_about'); ?></a>
