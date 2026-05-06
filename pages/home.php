@@ -11,7 +11,7 @@ $services = require __DIR__ . '/../data/services.php';
         <div class="absolute inset-0 bg-gradient-to-t from-primary dark:from-[#050B14] via-transparent to-transparent opacity-80 dark:opacity-60 transition-colors duration-300"></div>
     </div>
     
-    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 reveal-hidden">
+    <div class="relative z-30 text-center px-4 max-w-4xl mx-auto mt-16 reveal-hidden">
         <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight" data-i18n="hero_title">
             <?php echo t('hero_title'); ?>
         </h1>
