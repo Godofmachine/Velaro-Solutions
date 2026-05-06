@@ -34,7 +34,7 @@ return [
     [
         'id' => 4,
         'category' => 'web',
-        'image_id' => '1551284838023-2619f245544e',
+        'image_id' => '1498050108023-c5249f4df085',
         'title_en' => 'B2B SaaS Dashboard',
         'title_de' => 'B2B SaaS Dashboard',
         'client' => 'CloudMetrics',

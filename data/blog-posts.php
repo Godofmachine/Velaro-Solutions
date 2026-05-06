@@ -3,7 +3,7 @@
 return [
     [
         'slug' => 'future-of-web-development-2026',
-        'image_id' => '1518770660439-4636190af475',
+        'image_id' => '1498050108023-c5249f4df085',
         'date' => '2026-05-01',
         'author' => 'Sarah Schmidt',
         'title_en' => 'The Future of Web Development in 2026',
@@ -15,7 +15,7 @@ return [
     ],
     [
         'slug' => 'maximizing-roi-with-digital-strategy',
-        'image_id' => '1460925895990-23f03b73f58a',
+        'image_id' => '1460925895917-afdab827c52f',
         'date' => '2026-04-15',
         'author' => 'Markus Weber',
         'title_en' => 'Maximizing ROI with a Solid Digital Strategy',
