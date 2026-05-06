@@ -54,7 +54,7 @@ return [
     ],
     [
         'slug' => 'optimizing-for-voice-search',
-        'image_url' => 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f3fd?auto=format&fit=crop&w=800&q=80',
+        'image_url' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-02-15',
         'author' => 'Julia Koch',
         'title_en' => 'Optimizing for Voice Search',
@@ -66,7 +66,7 @@ return [
     ],
     [
         'slug' => 'role-of-ui-ux-retention',
-        'image_url' => 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d13e?auto=format&fit=crop&w=800&q=80',
+        'image_url' => 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-01-20',
         'author' => 'Thomas Müller',
         'title_en' => 'The Role of UI/UX in User Retention',
