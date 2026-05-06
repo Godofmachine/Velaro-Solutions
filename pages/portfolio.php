@@ -5,7 +5,7 @@ $portfolio_items = require __DIR__ . '/../data/portfolio.php';
 <!-- Header -->
 <section class="relative py-24 bg-primary dark:bg-[#050B14] overflow-hidden transition-colors duration-300">
     <div class="absolute inset-0 z-0 opacity-20">
-        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1920&q=80" alt="Law Library" class="w-full h-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1920&q=80" alt="Law Firm" class="w-full h-full object-cover" />
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-hidden">
         <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6" data-i18n="portfolio_title"><?php echo t('portfolio_title'); ?></h1>
