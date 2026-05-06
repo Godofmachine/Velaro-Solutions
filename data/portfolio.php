@@ -4,7 +4,7 @@ return [
     [
         'id' => 1,
         'category' => 'web', // We will map 'web' to 'Corporate' in UI
-        'image_url' => 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80',
+        'image_url' => 'https://images.unsplash.com/photo-1589578594247-505664194779?auto=format&fit=crop&w=800&q=80',
         'title_en' => 'Successful Defense in €5M Litigation',
         'title_de' => 'Erfolgreiche Abwehr einer €5M-Klage',
         'client' => 'Manufacturing Sector',
