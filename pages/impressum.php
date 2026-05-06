@@ -1,10 +1,10 @@
 <?php if (!defined('VELARO_SITE')) exit; ?>
 
-<section class="py-24 bg-white min-h-screen">
+<section class="py-24 bg-white dark:bg-neutral-dark min-h-screen transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl font-serif font-bold text-primary mb-12 border-b border-gray-200 pb-4">Impressum</h1>
+        <h1 class="text-4xl font-serif font-bold text-primary dark:text-white mb-12 border-b border-gray-200 dark:border-slate-800 pb-4">Impressum</h1>
         
-        <div class="prose prose-lg prose-blue text-gray-700">
+        <div class="prose prose-lg dark:prose-invert prose-blue text-gray-700 dark:text-gray-300">
             <p><strong>Angaben gemäß § 5 TMG:</strong></p>
             <p>
                 Velaro Rechtsanwälte<br>

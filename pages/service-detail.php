@@ -19,44 +19,44 @@ $title = $lang === 'de' ? $current_service['title_de'] : $current_service['title
 $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en'];
 ?>
 
-<section class="py-24 bg-neutral-light border-b border-gray-200">
+<section class="py-24 bg-neutral-light dark:bg-neutral-dark border-b border-gray-200 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-hidden">
-        <div class="w-20 h-20 mx-auto bg-white text-primary border-2 border-accent rounded-full flex items-center justify-center mb-8 shadow-sm">
+        <div class="w-20 h-20 mx-auto bg-white dark:bg-slate-900 text-primary dark:text-white border-2 border-accent rounded-full flex items-center justify-center mb-8 shadow-sm">
             <?php echo $current_service['icon']; ?>
         </div>
-        <h1 class="text-4xl md:text-6xl font-serif font-bold text-primary mb-6 tracking-tight delay-100 reveal-hidden"><?php echo $title; ?></h1>
-        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light delay-200 reveal-hidden"><?php echo $desc; ?></p>
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-primary dark:text-white mb-6 tracking-tight delay-100 reveal-hidden"><?php echo $title; ?></h1>
+        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed font-light delay-200 reveal-hidden"><?php echo $desc; ?></p>
     </div>
 </section>
 
-<section class="py-24 bg-white">
+<section class="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div class="reveal-hidden">
-                <h2 class="text-3xl font-serif font-bold text-primary mb-8" data-i18n="service_detail_features"><?php echo t('service_detail_features') ?: ($lang === 'de' ? 'Unsere Kernkompetenzen' : 'Core Competencies'); ?></h2>
+                <h2 class="text-3xl font-serif font-bold text-primary dark:text-white mb-8" data-i18n="service_detail_features"><?php echo t('service_detail_features') ?: ($lang === 'de' ? 'Unsere Kernkompetenzen' : 'Core Competencies'); ?></h2>
                 <ul class="space-y-6">
                     <li class="flex items-start gap-4">
                         <div class="mt-1 w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center shrink-0">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                         </div>
-                        <span class="text-gray-700 text-lg font-light"><?php echo $lang === 'de' ? 'Strategische rechtliche Beratung' : 'Strategic legal advice'; ?></span>
+                        <span class="text-gray-700 dark:text-gray-300 text-lg font-light"><?php echo $lang === 'de' ? 'Strategische rechtliche Beratung' : 'Strategic legal advice'; ?></span>
                     </li>
                     <li class="flex items-start gap-4">
                         <div class="mt-1 w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center shrink-0">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                         </div>
-                        <span class="text-gray-700 text-lg font-light"><?php echo $lang === 'de' ? 'Vertretung vor allen Gerichten' : 'Representation in all courts'; ?></span>
+                        <span class="text-gray-700 dark:text-gray-300 text-lg font-light"><?php echo $lang === 'de' ? 'Vertretung vor allen Gerichten' : 'Representation in all courts'; ?></span>
                     </li>
                     <li class="flex items-start gap-4">
                         <div class="mt-1 w-6 h-6 rounded-full bg-accent text-white flex items-center justify-center shrink-0">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                         </div>
-                        <span class="text-gray-700 text-lg font-light"><?php echo $lang === 'de' ? 'Laufendes Risikomanagement' : 'Ongoing risk management'; ?></span>
+                        <span class="text-gray-700 dark:text-gray-300 text-lg font-light"><?php echo $lang === 'de' ? 'Laufendes Risikomanagement' : 'Ongoing risk management'; ?></span>
                     </li>
                 </ul>
             </div>
             
-            <div class="bg-primary p-12 rounded border-t-4 border-accent text-center shadow-2xl relative overflow-hidden reveal-hidden delay-200">
+            <div class="bg-primary dark:bg-[#050B14] p-12 rounded border-t-4 border-accent text-center shadow-2xl relative overflow-hidden reveal-hidden delay-200">
                 <div class="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80" alt="Legal background" class="w-full h-full object-cover">
                 </div>
@@ -69,7 +69,7 @@ $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en
         </div>
         
         <div class="mt-16 text-center reveal-hidden delay-300">
-            <a href="/?page=services" class="inline-flex items-center text-gray-500 hover:text-primary transition font-medium border-b border-transparent hover:border-primary pb-1">
+            <a href="/?page=services" class="inline-flex items-center text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white transition font-medium border-b border-transparent hover:border-primary dark:hover:border-white pb-1">
                 <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
                 <span data-i18n="service_back_link"><?php echo t('service_back_link'); ?></span>
             </a>

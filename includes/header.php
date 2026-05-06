@@ -25,13 +25,14 @@ global $lang, $page;
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
                         primary: '#0B192C',
                         accent: '#C5A059',
                         neutral: {
-                            dark: '#111827',
+                            dark: '#08101E', // Replaced with a deeper navy/slate for dark mode
                             light: '#F8FAFC'
                         }
                     },
@@ -46,19 +47,22 @@ global $lang, $page;
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/custom.css">
+
+    <!-- Theme Logic (Loaded early to prevent FOUC) -->
+    <script src="/assets/js/theme.js"></script>
 </head>
-<body class="bg-neutral-light text-neutral-dark font-sans flex flex-col min-h-screen selection:bg-accent selection:text-white">
+<body class="bg-neutral-light dark:bg-neutral-dark text-gray-800 dark:text-gray-300 font-sans flex flex-col min-h-screen selection:bg-accent selection:text-white transition-colors duration-300">
 
 <!-- Skip to content link for Accessibility -->
-<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:text-primary focus:z-50">Skip to content</a>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white dark:focus:bg-slate-800 focus:text-primary dark:focus:text-white focus:z-50">Skip to content</a>
 
 <!-- Navigation -->
-<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-200">
+<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-200 dark:border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <a href="/" class="text-2xl font-serif font-bold text-primary flex items-center gap-3 group tracking-tight">
+                <a href="/" class="text-2xl font-serif font-bold text-primary dark:text-white flex items-center gap-3 group tracking-tight">
                     <svg class="w-8 h-8 text-accent transform group-hover:scale-105 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
                     <span data-i18n="firm_name"><?php echo t('firm_name'); ?></span>
                 </a>
@@ -66,24 +70,34 @@ global $lang, $page;
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="/" class="nav-link text-gray-700 hover:text-accent font-medium transition <?php echo $page === 'home' ? 'active' : ''; ?>" data-i18n="nav_home"><?php echo t('nav_home'); ?></a>
-                <a href="/?page=about" class="nav-link text-gray-700 hover:text-accent font-medium transition <?php echo $page === 'about' ? 'active' : ''; ?>" data-i18n="nav_about"><?php echo t('nav_about'); ?></a>
-                <a href="/?page=services" class="nav-link text-gray-700 hover:text-accent font-medium transition <?php echo $page === 'services' ? 'active' : ''; ?>" data-i18n="nav_services"><?php echo t('nav_services'); ?></a>
-                <a href="/?page=portfolio" class="nav-link text-gray-700 hover:text-accent font-medium transition <?php echo $page === 'portfolio' ? 'active' : ''; ?>" data-i18n="nav_portfolio"><?php echo t('nav_portfolio'); ?></a>
-                <a href="/?page=blog" class="nav-link text-gray-700 hover:text-accent font-medium transition <?php echo $page === 'blog' ? 'active' : ''; ?>" data-i18n="nav_blog"><?php echo t('nav_blog'); ?></a>
-                <a href="/?page=contact" class="px-5 py-2 rounded-full bg-primary text-white hover:bg-accent transition shadow hover:shadow-lg font-medium <?php echo $page === 'contact' ? 'ring-2 ring-accent ring-offset-2' : ''; ?>" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></a>
+                <a href="/" class="nav-link text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent font-medium transition <?php echo $page === 'home' ? 'active' : ''; ?>" data-i18n="nav_home"><?php echo t('nav_home'); ?></a>
+                <a href="/?page=about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent font-medium transition <?php echo $page === 'about' ? 'active' : ''; ?>" data-i18n="nav_about"><?php echo t('nav_about'); ?></a>
+                <a href="/?page=services" class="nav-link text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent font-medium transition <?php echo $page === 'services' ? 'active' : ''; ?>" data-i18n="nav_services"><?php echo t('nav_services'); ?></a>
+                <a href="/?page=portfolio" class="nav-link text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent font-medium transition <?php echo $page === 'portfolio' ? 'active' : ''; ?>" data-i18n="nav_portfolio"><?php echo t('nav_portfolio'); ?></a>
+                <a href="/?page=blog" class="nav-link text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent font-medium transition <?php echo $page === 'blog' ? 'active' : ''; ?>" data-i18n="nav_blog"><?php echo t('nav_blog'); ?></a>
+                <a href="/?page=contact" class="px-5 py-2 rounded bg-primary text-white hover:bg-accent transition shadow hover:shadow-lg font-medium <?php echo $page === 'contact' ? 'ring-2 ring-accent ring-offset-2 dark:ring-offset-slate-900' : ''; ?>" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></a>
                 
+                <!-- Theme Toggle Desktop -->
+                <button onclick="toggleTheme()" class="ml-2 p-2 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white transition focus:outline-none" title="Toggle Light/Dark Mode">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+
                 <!-- Language Toggle -->
-                <div class="relative ml-4 flex items-center gap-2 border-l pl-4 border-gray-200">
-                    <button onclick="setLang('en')" class="<?php echo $lang === 'en' ? 'font-bold text-primary' : 'text-gray-500 hover:text-primary'; ?> text-sm uppercase transition" title="<?php echo t('lang_en'); ?>">EN</button>
-                    <span class="text-gray-300">|</span>
-                    <button onclick="setLang('de')" class="<?php echo $lang === 'de' ? 'font-bold text-primary' : 'text-gray-500 hover:text-primary'; ?> text-sm uppercase transition" title="<?php echo t('lang_de'); ?>">DE</button>
+                <div class="relative ml-4 flex items-center gap-2 border-l pl-4 border-gray-200 dark:border-slate-700">
+                    <button onclick="setLang('en')" class="<?php echo $lang === 'en' ? 'font-bold text-primary dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white'; ?> text-sm uppercase transition" title="<?php echo t('lang_en'); ?>">EN</button>
+                    <span class="text-gray-300 dark:text-gray-600">|</span>
+                    <button onclick="setLang('de')" class="<?php echo $lang === 'de' ? 'font-bold text-primary dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white'; ?> text-sm uppercase transition" title="<?php echo t('lang_de'); ?>">DE</button>
                 </div>
             </nav>
 
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none p-2">
+            <!-- Mobile menu button & Theme toggle -->
+            <div class="md:hidden flex items-center gap-4">
+                <button onclick="toggleTheme()" class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white focus:outline-none">
+                    <svg id="theme-toggle-dark-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                <button id="mobile-menu-btn" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-white focus:outline-none p-2">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -93,18 +107,18 @@ global $lang, $page;
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-100 absolute w-full transition-all">
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-2xl border-t border-gray-100 dark:border-slate-800 absolute w-full transition-all">
         <div class="px-4 pt-2 pb-6 space-y-1">
-            <a href="/" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'home' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_home"><?php echo t('nav_home'); ?></a>
-            <a href="/?page=about" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'about' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_about"><?php echo t('nav_about'); ?></a>
-            <a href="/?page=services" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'services' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_services"><?php echo t('nav_services'); ?></a>
-            <a href="/?page=portfolio" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'portfolio' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_portfolio"><?php echo t('nav_portfolio'); ?></a>
-            <a href="/?page=blog" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'blog' ? 'text-accent bg-gray-50' : 'text-gray-700 hover:text-accent hover:bg-gray-50'; ?>" data-i18n="nav_blog"><?php echo t('nav_blog'); ?></a>
-            <a href="/?page=contact" class="block px-3 py-3 rounded-md text-base font-medium <?php echo $page === 'contact' ? 'text-accent bg-blue-50 font-bold' : 'text-primary bg-blue-50'; ?>" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></a>
+            <a href="/" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'home' ? 'text-accent bg-gray-50 dark:bg-slate-800' : 'text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent hover:bg-gray-50 dark:hover:bg-slate-800'; ?>" data-i18n="nav_home"><?php echo t('nav_home'); ?></a>
+            <a href="/?page=about" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'about' ? 'text-accent bg-gray-50 dark:bg-slate-800' : 'text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent hover:bg-gray-50 dark:hover:bg-slate-800'; ?>" data-i18n="nav_about"><?php echo t('nav_about'); ?></a>
+            <a href="/?page=services" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'services' ? 'text-accent bg-gray-50 dark:bg-slate-800' : 'text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent hover:bg-gray-50 dark:hover:bg-slate-800'; ?>" data-i18n="nav_services"><?php echo t('nav_services'); ?></a>
+            <a href="/?page=portfolio" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'portfolio' ? 'text-accent bg-gray-50 dark:bg-slate-800' : 'text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent hover:bg-gray-50 dark:hover:bg-slate-800'; ?>" data-i18n="nav_portfolio"><?php echo t('nav_portfolio'); ?></a>
+            <a href="/?page=blog" class="block px-3 py-3 rounded-md text-base font-medium transition <?php echo $page === 'blog' ? 'text-accent bg-gray-50 dark:bg-slate-800' : 'text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent hover:bg-gray-50 dark:hover:bg-slate-800'; ?>" data-i18n="nav_blog"><?php echo t('nav_blog'); ?></a>
+            <a href="/?page=contact" class="block px-3 py-3 rounded-md text-base font-medium <?php echo $page === 'contact' ? 'text-accent bg-blue-50 dark:bg-slate-800 font-bold' : 'text-primary dark:text-white bg-blue-50 dark:bg-slate-800/50'; ?>" data-i18n="nav_contact"><?php echo t('nav_contact'); ?></a>
             
-            <div class="px-3 py-4 flex gap-4 mt-2 border-t border-gray-100">
-                <button onclick="setLang('en')" class="flex-1 py-2 text-center rounded bg-gray-50 <?php echo $lang === 'en' ? 'font-bold text-primary ring-1 ring-primary' : 'text-gray-500'; ?>">EN</button>
-                <button onclick="setLang('de')" class="flex-1 py-2 text-center rounded bg-gray-50 <?php echo $lang === 'de' ? 'font-bold text-primary ring-1 ring-primary' : 'text-gray-500'; ?>">DE</button>
+            <div class="px-3 py-4 flex gap-4 mt-2 border-t border-gray-100 dark:border-slate-800">
+                <button onclick="setLang('en')" class="flex-1 py-2 text-center rounded bg-gray-50 dark:bg-slate-800 <?php echo $lang === 'en' ? 'font-bold text-primary dark:text-white ring-1 ring-primary dark:ring-slate-600' : 'text-gray-500 dark:text-gray-400'; ?>">EN</button>
+                <button onclick="setLang('de')" class="flex-1 py-2 text-center rounded bg-gray-50 dark:bg-slate-800 <?php echo $lang === 'de' ? 'font-bold text-primary dark:text-white ring-1 ring-primary dark:ring-slate-600' : 'text-gray-500 dark:text-gray-400'; ?>">DE</button>
             </div>
         </div>
     </div>
