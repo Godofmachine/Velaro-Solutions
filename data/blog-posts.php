@@ -1,9 +1,9 @@
 <?php
-// Mock data for Blog Posts with PICSUM URLs for absolute reliability
+// Mock data for Blog Posts with TOPIC-RELEVANT verified Unsplash URLs
 return [
     [
         'slug' => 'future-of-web-development-2026',
-        'image_url' => 'https://picsum.photos/seed/future-web-2026/1200/800',
+        'image_url' => 'https://images.unsplash.com/photo-1517694476052-195816527013?auto=format&fit=crop&w=1200&q=80',
         'is_featured' => true,
         'date' => '2026-05-01',
         'author' => 'Sarah Schmidt',
@@ -16,7 +16,7 @@ return [
     ],
     [
         'slug' => 'maximizing-roi-with-digital-strategy',
-        'image_url' => 'https://picsum.photos/seed/digital-roi/1200/800',
+        'image_url' => 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
         'is_featured' => true,
         'date' => '2026-04-15',
         'author' => 'Markus Weber',
@@ -29,7 +29,7 @@ return [
     ],
     [
         'slug' => 'power-of-minimalist-branding',
-        'image_url' => 'https://picsum.photos/seed/branding-min/1200/800',
+        'image_url' => 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
         'is_featured' => true,
         'date' => '2026-03-28',
         'author' => 'Elena Fischer',
@@ -42,7 +42,7 @@ return [
     ],
     [
         'slug' => 'ai-customer-service-2026',
-        'image_url' => 'https://picsum.photos/seed/ai-service/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-03-10',
         'author' => 'David Wagner',
         'title_en' => 'AI in Customer Service: A 2026 Perspective',
@@ -54,7 +54,7 @@ return [
     ],
     [
         'slug' => 'optimizing-for-voice-search',
-        'image_url' => 'https://picsum.photos/seed/voice-seo/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f3fd?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-02-15',
         'author' => 'Julia Koch',
         'title_en' => 'Optimizing for Voice Search',
@@ -66,7 +66,7 @@ return [
     ],
     [
         'slug' => 'role-of-ui-ux-retention',
-        'image_url' => 'https://picsum.photos/seed/uiux-retention/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d13e?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-01-20',
         'author' => 'Thomas Müller',
         'title_en' => 'The Role of UI/UX in User Retention',
@@ -78,7 +78,7 @@ return [
     ],
     [
         'slug' => 'power-of-typography',
-        'image_url' => 'https://picsum.photos/seed/typo-web/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80',
         'date' => '2026-01-05',
         'author' => 'Elena Fischer',
         'title_en' => 'The Power of Typography in Web Design',
@@ -90,7 +90,7 @@ return [
     ],
     [
         'slug' => 'cybersecurity-small-business',
-        'image_url' => 'https://picsum.photos/seed/cyber-sec/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80',
         'date' => '2025-12-15',
         'author' => 'David Wagner',
         'title_en' => 'Cybersecurity Trends for Small Businesses',
@@ -102,7 +102,7 @@ return [
     ],
     [
         'slug' => 'evolution-of-ecommerce-2026',
-        'image_url' => 'https://picsum.photos/seed/ecommerce-future/800/600',
+        'image_url' => 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80',
         'date' => '2025-11-30',
         'author' => 'Markus Weber',
         'title_en' => 'The Evolution of E-commerce in 2026',
