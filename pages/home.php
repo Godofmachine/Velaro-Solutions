@@ -115,14 +115,14 @@ $services = require __DIR__ . '/../data/services.php';
         <div class="max-w-4xl mx-auto bg-white/10 p-8 md:p-12 rounded-3xl backdrop-blur-sm border border-white/20 relative">
             <svg class="absolute top-8 left-8 w-12 h-12 text-accent/30" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h2V8h-2zm16 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h2V8h-2z"/></svg>
             <div class="relative z-10 text-center">
-                <p class="text-xl md:text-2xl font-light leading-relaxed mb-8">
-                    "Velaro Solutions completely transformed our digital presence. Their attention to detail, strategic approach, and technical expertise delivered results beyond our expectations."
+                <p class="text-xl md:text-2xl font-light leading-relaxed mb-8" data-i18n="home_testimonial_quote">
+                    <?php echo t('home_testimonial_quote'); ?>
                 </p>
                 <div class="flex items-center justify-center gap-4">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Client" class="w-16 h-16 rounded-full border-2 border-accent object-cover" />
                     <div class="text-left">
                         <div class="font-bold text-lg">Dr. Elena Fischer</div>
-                        <div class="text-accent text-sm">CEO, TechGear GmbH</div>
+                        <div class="text-accent text-sm" data-i18n="home_testimonial_role"><?php echo t('home_testimonial_role'); ?></div>
                     </div>
                 </div>
             </div>
