@@ -73,7 +73,7 @@
         <!-- Bottom Bar -->
         <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-sm text-gray-500">
-                &copy; <?php echo date('Y'); ?> Velaro Solutions. All rights reserved.
+                &copy; <?php echo date('Y'); ?> Velaro Solutions. <span data-i18n="footer_rights"><?php echo t('footer_rights'); ?></span>
             </p>
             <div class="flex space-x-6 text-sm">
                 <a href="/?page=impressum" class="text-gray-500 hover:text-white transition" data-i18n="footer_impressum"><?php echo t('footer_impressum'); ?></a>

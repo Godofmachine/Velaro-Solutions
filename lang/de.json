@@ -42,5 +42,6 @@
   "service_web": "Webentwicklung",
   "service_design": "UI/UX Design",
   "service_strategy": "Digitale Strategie",
-  "service_app": "Mobile Anwendungen"
+  "service_app": "Mobile Anwendungen",
+  "footer_rights": "Alle Rechte vorbehalten."
 }
