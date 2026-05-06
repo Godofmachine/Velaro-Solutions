@@ -7,8 +7,8 @@ $services = require __DIR__ . '/../data/services.php';
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="Team Meeting" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-neutral-light via-transparent to-transparent"></div>
+        <div class="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-neutral-dark via-transparent to-transparent"></div>
     </div>
     
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
