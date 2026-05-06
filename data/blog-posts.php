@@ -29,7 +29,7 @@ return [
     ],
     [
         'slug' => 'power-of-minimalist-branding',
-        'image_id' => '1523381235312-3c1a47759e00',
+        'image_id' => '1522542550221-31fd15255a37',
         'is_featured' => true,
         'date' => '2026-03-28',
         'author' => 'Elena Fischer',
@@ -54,7 +54,7 @@ return [
     ],
     [
         'slug' => 'optimizing-for-voice-search',
-        'image_id' => '1589252102312-ac72b0241846',
+        'image_id' => '1471100224536-a57962ed1912',
         'date' => '2026-02-15',
         'author' => 'Julia Koch',
         'title_en' => 'Optimizing for Voice Search',
@@ -66,7 +66,7 @@ return [
     ],
     [
         'slug' => 'role-of-ui-ux-retention',
-        'image_id' => '1581291518633-83b4ebd1d13e',
+        'image_id' => '1586717791821-3f44a563cc4c',
         'date' => '2026-01-20',
         'author' => 'Thomas Müller',
         'title_en' => 'The Role of UI/UX in User Retention',
@@ -75,5 +75,41 @@ return [
         'excerpt_de' => 'Gutes Design ist mehr als nur Ästhetik – es ist der Schlüssel, um Ihre Nutzer immer wieder zurückzuholen.',
         'content_en' => '<p>Retention is the new growth. In this article, we look at how micro-interactions, intuitive navigation, and psychological design principles impact long-term engagement.</p>',
         'content_de' => '<p>Retention ist das neue Wachstum. In diesem Artikel untersuchen wir, wie Mikrointeraktionen und intuitive Navigation das langfristige Engagement beeinflussen.</p>'
+    ],
+    [
+        'slug' => 'power-of-typography',
+        'image_id' => '1516062423002-79396e62c68c',
+        'date' => '2026-01-05',
+        'author' => 'Elena Fischer',
+        'title_en' => 'The Power of Typography in Web Design',
+        'title_de' => 'Die Macht der Typografie im Webdesign',
+        'excerpt_en' => 'How font choices impact readability, brand perception, and user emotions.',
+        'excerpt_de' => 'Wie die Wahl der Schriftart die Lesbarkeit, die Markenwahrnehmung und die Emotionen der Nutzer beeinflusst.',
+        'content_en' => '<p>Typography is the foundation of the web. Choosing the right typeface can make or break your user experience.</p>',
+        'content_de' => '<p>Typografie ist das Fundament des Webs. Die Wahl der richtigen Schriftart kann Ihre Benutzererfahrung entscheiden.</p>'
+    ],
+    [
+        'slug' => 'cybersecurity-small-business',
+        'image_id' => '1550751827-4bd374c3f58b',
+        'date' => '2025-12-15',
+        'author' => 'David Wagner',
+        'title_en' => 'Cybersecurity Trends for Small Businesses',
+        'title_de' => 'Cybersecurity-Trends für kleine Unternehmen',
+        'excerpt_en' => 'Protect your digital assets with the latest security practices tailored for small scale operations.',
+        'excerpt_de' => 'Schützen Sie Ihre digitalen Assets mit den neuesten Sicherheitspraktiken, die auf kleine Betriebe zugeschnitten sind.',
+        'content_en' => '<p>In an increasingly digital world, security is not optional. We break down the essential steps for small businesses.</p>',
+        'content_de' => '<p>In einer zunehmend digitalen Welt ist Sicherheit nicht optional. Wir zeigen die wesentlichen Schritte für kleine Unternehmen.</p>'
+    ],
+    [
+        'slug' => 'evolution-of-ecommerce-2026',
+        'image_id' => '1472851294608-f82fb72cb524',
+        'date' => '2025-11-30',
+        'author' => 'Markus Weber',
+        'title_en' => 'The Evolution of E-commerce in 2026',
+        'title_de' => 'Die Entwicklung des E-Commerce im Jahr 2026',
+        'excerpt_en' => 'From social commerce to AR-powered shopping, see what\'s driving sales today.',
+        'excerpt_de' => 'Vom Social Commerce bis zum AR-gestützten Shopping – sehen Sie, was den Verkauf heute antreibt.',
+        'content_en' => '<p>E-commerce has transcended simple transactions. It\'s now about immersive experiences and personalized journeys.</p>',
+        'content_de' => '<p>E-Commerce hat einfache Transaktionen hinter sich gelassen. Es geht jetzt um immersive Erlebnisse.</p>'
     ]
 ];
