@@ -31,14 +31,14 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
                 <div class="min-w-[85vw] md:min-w-0 snap-center">
                     <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>" class="group block h-full">
                         <div class="relative h-[30rem] rounded-[2.5rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                            <img src="https://images.unsplash.com/photo-<?php echo $post['image_id']; ?>?auto=format&fit=crop&w=800&q=80" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                            <img src="<?php echo $post['image_url']; ?>" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                             <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 p-8 w-full">
                                 <span class="bg-accent text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 inline-block shadow-lg" data-i18n="blog_featured"><?php echo t('blog_featured'); ?></span>
                                 <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-accent transition duration-300 leading-tight">
                                     <?php echo $lang === 'de' ? $post['title_de'] : $post['title_en']; ?>
                                 </h3>
-                                <div class="text-gray-200 text-sm flex items-center gap-3 font-medium">
+                                <div class="text-gray-200 text-xs flex items-center gap-3 font-medium">
                                     <span class="flex items-center gap-2">
                                         <?php echo date('M d, Y', strtotime($post['date'])); ?>
                                     </span>
@@ -63,7 +63,7 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
             ?>
             <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden flex flex-col reveal-hidden" style="transition-delay: <?php echo $delay; ?>ms;">
                 <div class="h-56 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-<?php echo $post['image_id']; ?>?auto=format&fit=crop&w=600&q=80" alt="Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                    <img src="<?php echo $post['image_url']; ?>" alt="Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                     <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition"></div>
                 </div>
                 <div class="p-8 flex-grow flex flex-col">

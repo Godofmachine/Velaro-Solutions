@@ -23,7 +23,7 @@ $content = $lang === 'de' ? $current_post['content_de'] : $current_post['content
 <article class="pt-20 bg-white">
     <!-- Header Image -->
     <div class="h-[50vh] md:h-[70vh] relative reveal-hidden">
-        <img src="https://images.unsplash.com/photo-<?php echo $current_post['image_id']; ?>?auto=format&fit=crop&w=1920&q=80" alt="Article Cover" class="w-full h-full object-cover" />
+        <img src="<?php echo $current_post['image_url']; ?>" alt="Article Cover" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
     </div>
     
