@@ -113,15 +113,15 @@ $services = require __DIR__ . '/../data/services.php';
                 <ul class="space-y-4 mb-10">
                     <li class="flex items-center gap-3 text-primary dark:text-gray-300 font-medium">
                         <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        Certified Legal Specialists (Fachanwälte)
+                        <span data-i18n="home_about_bullet1"><?php echo t('home_about_bullet1'); ?></span>
                     </li>
                     <li class="flex items-center gap-3 text-primary dark:text-gray-300 font-medium">
                         <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        International Reach & Network
+                        <span data-i18n="home_about_bullet2"><?php echo t('home_about_bullet2'); ?></span>
                     </li>
                     <li class="flex items-center gap-3 text-primary dark:text-gray-300 font-medium">
                         <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        Highest Standards of Confidentiality
+                        <span data-i18n="home_about_bullet3"><?php echo t('home_about_bullet3'); ?></span>
                     </li>
                 </ul>
                 <a href="/?page=about" class="bg-primary dark:bg-slate-800 dark:hover:bg-slate-700 text-white px-8 py-3 rounded font-bold hover:bg-accent transition shadow hover:-translate-y-1 inline-block uppercase tracking-wide text-sm" data-i18n="home_about_cta"><?php echo t('home_about_cta'); ?></a>
