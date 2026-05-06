@@ -1,0 +1,5 @@
+# PHP
+contact_log.txt
+*.log
+.DS_Store
+Thumbs.db
