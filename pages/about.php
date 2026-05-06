@@ -38,7 +38,7 @@
             <!-- Team Member 1 -->
             <div class="bg-white rounded-2xl overflow-hidden shadow hover-lift group text-center pb-8 border border-gray-100">
                 <div class="h-64 overflow-hidden mb-6">
-                    <img src="https://images.unsplash.com/photo-1560250097-001be0f64ad43ce?auto=format&fit=crop&w=800&q=80" alt="Michael Bauer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Michael Bauer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                 </div>
                 <h3 class="text-xl font-bold text-primary">Michael Bauer</h3>
                 <p class="text-accent font-medium mb-4">Chief Executive Officer</p>
