@@ -34,26 +34,26 @@ $desc = $lang === 'de' ? $current_service['desc_de'] : $current_service['desc_en
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-2xl font-bold text-primary mb-6">Key Features</h2>
+                <h2 class="text-2xl font-bold text-primary mb-6" data-i18n="service_detail_features"><?php echo t('service_detail_features'); ?></h2>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        <span class="text-gray-700">Custom tailored to your specific business requirements.</span>
+                        <span class="text-gray-700" data-i18n="feature_custom"><?php echo t('feature_custom'); ?></span>
                     </li>
                     <li class="flex items-start gap-3">
                         <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        <span class="text-gray-700">Built with modern, scalable, and secure technologies.</span>
+                        <span class="text-gray-700" data-i18n="feature_modern"><?php echo t('feature_modern'); ?></span>
                     </li>
                     <li class="flex items-start gap-3">
                         <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        <span class="text-gray-700">Ongoing support and maintenance packages available.</span>
+                        <span class="text-gray-700" data-i18n="feature_support"><?php echo t('feature_support'); ?></span>
                     </li>
                 </ul>
             </div>
             <div class="bg-primary p-8 rounded-3xl text-white text-center shadow-xl">
-                <h3 class="text-2xl font-bold mb-4">Ready to start?</h3>
-                <p class="text-gray-300 mb-8">Contact us today to discuss how we can help you achieve your goals.</p>
-                <a href="/?page=contact" class="bg-accent text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition block">Request a Quote</a>
+                <h3 class="text-2xl font-bold mb-4" data-i18n="service_detail_ready"><?php echo t('service_detail_ready'); ?></h3>
+                <p class="text-gray-300 mb-8" data-i18n="service_detail_contact_desc"><?php echo t('service_detail_contact_desc'); ?></p>
+                <a href="/?page=contact" class="bg-accent text-white px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition block" data-i18n="service_detail_quote_btn"><?php echo t('service_detail_quote_btn'); ?></a>
             </div>
         </div>
     </div>

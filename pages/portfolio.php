@@ -16,10 +16,10 @@ $portfolio_items = require __DIR__ . '/../data/portfolio.php';
         
         <!-- Filter Tabs -->
         <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="filter-btn active px-6 py-2 rounded-full border-2 border-primary bg-primary text-white font-medium transition" data-filter="all">All</button>
-            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="web">Web</button>
-            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="branding">Branding</button>
-            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="app">App</button>
+            <button class="filter-btn active px-6 py-2 rounded-full border-2 border-primary bg-primary text-white font-medium transition" data-filter="all" data-i18n="filter_all"><?php echo t('filter_all'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="web" data-i18n="filter_web"><?php echo t('filter_web'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="branding" data-i18n="filter_branding"><?php echo t('filter_branding'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium transition" data-filter="app" data-i18n="filter_app"><?php echo t('filter_app'); ?></button>
         </div>
 
         <!-- Portfolio Grid -->

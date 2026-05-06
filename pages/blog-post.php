@@ -12,7 +12,7 @@ foreach ($posts as $post) {
 }
 
 if (!$current_post) {
-    echo '<div class="pt-32 text-center text-xl">Post not found.</div>';
+    echo '<div class="pt-32 text-center text-xl" data-i18n="blog_post_not_found">' . t('blog_post_not_found') . '</div>';
     return;
 }
 
@@ -57,7 +57,7 @@ $content = $lang === 'de' ? $current_post['content_de'] : $current_post['content
             <div class="mt-12 pt-8 border-t border-gray-100">
                 <a href="/?page=blog" class="text-accent hover:text-primary transition font-medium inline-flex items-center gap-2">
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-                    Back to Blog
+                    <span data-i18n="blog_back_link"><?php echo t('blog_back_link'); ?></span>
                 </a>
             </div>
         </div>

@@ -24,7 +24,7 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
                     <img src="https://images.unsplash.com/photo-<?php echo $featured['image_id']; ?>?auto=format&fit=crop&w=1200&q=80" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
                     <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 md:p-12 w-full md:w-2/3">
-                        <span class="bg-accent text-white px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full mb-4 inline-block">Featured</span>
+                        <span class="bg-accent text-white px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full mb-4 inline-block" data-i18n="blog_featured"><?php echo t('blog_featured'); ?></span>
                         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-accent transition">
                             <?php echo $lang === 'de' ? $featured['title_de'] : $featured['title_en']; ?>
                         </h2>
@@ -60,7 +60,7 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
                     <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
                         <?php echo $lang === 'de' ? $post['excerpt_de'] : $post['excerpt_en']; ?>
                     </p>
-                    <div class="text-accent text-sm font-medium">Read Article &rarr;</div>
+                    <div class="text-accent text-sm font-medium" data-i18n="blog_read_article"><?php echo t('blog_read_article'); ?> &rarr;</div>
                 </div>
             </a>
             <?php endforeach; ?>

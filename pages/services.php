@@ -44,7 +44,7 @@ $services = require __DIR__ . '/../data/services.php';
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-primary mb-4">Our Process</h2>
+            <h2 class="text-3xl font-bold text-primary mb-4" data-i18n="services_process_title"><?php echo t('services_process_title'); ?></h2>
             <div class="w-24 h-1 bg-accent mx-auto"></div>
         </div>
         
@@ -53,28 +53,28 @@ $services = require __DIR__ . '/../data/services.php';
             <div class="text-center relative">
                 <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 relative z-10">1</div>
                 <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200"></div>
-                <h3 class="text-xl font-bold text-primary mb-2">Discovery</h3>
-                <p class="text-gray-600">Understanding your business, goals, and target audience.</p>
+                <h3 class="text-xl font-bold text-primary mb-2" data-i18n="process_step1_title"><?php echo t('process_step1_title'); ?></h3>
+                <p class="text-gray-600" data-i18n="process_step1_desc"><?php echo t('process_step1_desc'); ?></p>
             </div>
             <!-- Step 2 -->
             <div class="text-center relative">
                 <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 relative z-10">2</div>
                 <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200"></div>
-                <h3 class="text-xl font-bold text-primary mb-2">Strategy</h3>
-                <p class="text-gray-600">Creating a detailed roadmap and technical architecture.</p>
+                <h3 class="text-xl font-bold text-primary mb-2" data-i18n="process_step2_title"><?php echo t('process_step2_title'); ?></h3>
+                <p class="text-gray-600" data-i18n="process_step2_desc"><?php echo t('process_step2_desc'); ?></p>
             </div>
             <!-- Step 3 -->
             <div class="text-center relative">
                 <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 relative z-10">3</div>
                 <div class="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200"></div>
-                <h3 class="text-xl font-bold text-primary mb-2">Execution</h3>
-                <p class="text-gray-600">Agile development and iterative design implementation.</p>
+                <h3 class="text-xl font-bold text-primary mb-2" data-i18n="process_step3_title"><?php echo t('process_step3_title'); ?></h3>
+                <p class="text-gray-600" data-i18n="process_step3_desc"><?php echo t('process_step3_desc'); ?></p>
             </div>
             <!-- Step 4 -->
             <div class="text-center relative">
                 <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 relative z-10">4</div>
-                <h3 class="text-xl font-bold text-primary mb-2">Launch</h3>
-                <p class="text-gray-600">Rigorous testing, deployment, and ongoing support.</p>
+                <h3 class="text-xl font-bold text-primary mb-2" data-i18n="process_step4_title"><?php echo t('process_step4_title'); ?></h3>
+                <p class="text-gray-600" data-i18n="process_step4_desc"><?php echo t('process_step4_desc'); ?></p>
             </div>
         </div>
     </div>
