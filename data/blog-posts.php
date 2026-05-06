@@ -3,7 +3,7 @@
 return [
     [
         'slug' => 'future-of-web-development-2026',
-        'image_id' => '1498050108023-c5249f4df085',
+        'image_id' => '1518770660439-4636190af475',
         'date' => '2026-05-01',
         'author' => 'Sarah Schmidt',
         'title_en' => 'The Future of Web Development in 2026',
