@@ -1,44 +1,44 @@
 <?php
-// Mock data for Portfolio
+// Mock data for Portfolio (Case Studies / Erfolge)
 return [
     [
         'id' => 1,
-        'category' => 'web',
-        'image_id' => '1460925895917-afdab827c52f',
-        'title_en' => 'E-Commerce Platform Rebuild',
-        'title_de' => 'Umbau der E-Commerce-Plattform',
-        'client' => 'TechGear GmbH',
-        'desc_en' => 'A complete redesign and rebuild of a high-traffic e-commerce store resulting in a 40% increase in conversions.',
-        'desc_de' => 'Ein komplettes Redesign und Neubau eines stark frequentierten E-Commerce-Shops, was zu einer Steigerung der Conversions um 40% führte.'
+        'category' => 'web', // We will map 'web' to 'Corporate' in UI
+        'image_url' => 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80',
+        'title_en' => 'Successful Defense in €5M Litigation',
+        'title_de' => 'Erfolgreiche Abwehr einer €5M-Klage',
+        'client' => 'Manufacturing Sector',
+        'desc_en' => 'We successfully defended a leading manufacturing company against unjustified breach of contract claims in international arbitration.',
+        'desc_de' => 'Wir haben ein führendes Produktionsunternehmen erfolgreich gegen ungerechtfertigte Vertragsverletzungsansprüche in einem internationalen Schiedsverfahren verteidigt.'
     ],
     [
         'id' => 2,
-        'category' => 'branding',
-        'image_id' => '1551434678-e076c223a692',
-        'title_en' => 'Corporate Identity Overhaul',
-        'title_de' => 'Überarbeitung der Corporate Identity',
-        'client' => 'FinServe Group',
-        'desc_en' => 'Modernizing the brand identity for a leading financial services firm to appeal to a younger demographic.',
-        'desc_de' => 'Modernisierung der Markenidentität eines führenden Finanzdienstleisters, um eine jüngere Zielgruppe anzusprechen.'
+        'category' => 'branding', // 'branding' -> 'Employment'
+        'image_url' => 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
+        'title_en' => 'Executive Severance Negotiation',
+        'title_de' => 'Verhandlung von Vorstandsabfindungen',
+        'client' => 'C-Level Executive',
+        'desc_en' => 'Negotiated a highly favorable severance package and post-contractual non-compete waiver for a departing CEO.',
+        'desc_de' => 'Verhandlung einer äußerst vorteilhaften Abfindung und eines nachvertraglichen Wettbewerbsverzichts für einen scheidenden CEO.'
     ],
     [
         'id' => 3,
-        'category' => 'app',
-        'image_id' => '1511688878353-3a2f5be94cd7',
-        'title_en' => 'Fitness Tracking App',
-        'title_de' => 'Fitness-Tracking-App',
-        'client' => 'FitLife App',
-        'desc_en' => 'A cross-platform mobile application that tracks user workouts and provides personalized health insights.',
-        'desc_de' => 'Eine plattformübergreifende mobile Anwendung, die die Workouts der Benutzer verfolgt und personalisierte Gesundheitseinblicke bietet.'
+        'category' => 'app', // 'app' -> 'Litigation'
+        'image_url' => 'https://images.unsplash.com/photo-1505664194779-8beaceb59234?auto=format&fit=crop&w=800&q=80',
+        'title_en' => 'Landmark Trademark Dispute',
+        'title_de' => 'Grundsatzstreit im Markenrecht',
+        'client' => 'Tech Startup',
+        'desc_en' => 'Secured an injunction against a competitor infringing on our client\'s core intellectual property, protecting their market share.',
+        'desc_de' => 'Erwirkung einer einstweiligen Verfügung gegen einen Konkurrenten, der das geistige Eigentum unseres Mandanten verletzte, um dessen Marktanteil zu schützen.'
     ],
     [
         'id' => 4,
         'category' => 'web',
-        'image_id' => '1498050108023-c5249f4df085',
-        'title_en' => 'B2B SaaS Dashboard',
-        'title_de' => 'B2B SaaS Dashboard',
-        'client' => 'CloudMetrics',
-        'desc_en' => 'An intuitive data visualization dashboard built with React and Tailwind CSS for a B2B analytics platform.',
-        'desc_de' => 'Ein intuitives Dashboard zur Datenvisualisierung, erstellt mit React und Tailwind CSS für eine B2B-Analyseplattform.'
+        'image_url' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+        'title_en' => 'Cross-Border M&A Transaction',
+        'title_de' => 'Grenzüberschreitende M&A-Transaktion',
+        'client' => 'European Logistics Firm',
+        'desc_en' => 'Acted as lead counsel in the €150M acquisition of a competitor, navigating complex regulatory and antitrust hurdles.',
+        'desc_de' => 'Federführende Beratung bei der 150-Millionen-Euro-Übernahme eines Wettbewerbers unter Überwindung komplexer regulatorischer und kartellrechtlicher Hürden.'
     ]
 ];

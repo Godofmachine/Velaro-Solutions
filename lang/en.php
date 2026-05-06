@@ -1,0 +1,105 @@
+<?php
+return [
+    // Global & Header
+    'site_title' => 'Weber & Partner | Corporate & Business Law Firm',
+    'nav_home' => 'Home',
+    'nav_about' => 'The Firm',
+    'nav_services' => 'Practice Areas',
+    'nav_portfolio' => 'Case Studies',
+    'nav_blog' => 'Insights',
+    'nav_contact' => 'Contact Us',
+    'lang_en' => 'English',
+    'lang_de' => 'German',
+
+    // Hero Section
+    'hero_title' => 'Trusted Legal Counsel for Your Business.',
+    'hero_subtitle' => 'Specialized in Corporate Law, Employment Law, and Dispute Resolution. We protect your interests with precision and dedication across Germany and Europe.',
+    'hero_cta1' => 'Schedule a Consultation',
+    'hero_cta2' => 'Our Practice Areas',
+
+    // Home - Services Section
+    'home_services_title' => 'Our Core Expertise',
+    'home_services_subtitle' => 'Comprehensive legal solutions tailored to the complex needs of modern businesses and entrepreneurs.',
+
+    // Home - About Section
+    'home_about_title' => 'Decades of Excellence',
+    'home_about_text' => 'At Weber & Partner, we combine deep legal expertise with a pragmatic business approach. Our attorneys are recognized leaders in their respective fields, ensuring that you receive not just legal advice, but strategic advantages.',
+    'home_about_cta' => 'Meet Our Attorneys',
+
+    // Home - Stats
+    'stat_1_num' => '25+',
+    'stat_1_label' => 'Years of Practice',
+    'stat_2_num' => '1.2k',
+    'stat_2_label' => 'Cases Won',
+    'stat_3_num' => '15',
+    'stat_3_label' => 'Specialized Attorneys',
+    'stat_4_num' => '98%',
+    'stat_4_label' => 'Client Satisfaction',
+
+    // About Page (The Firm)
+    'about_title' => 'About The Firm',
+    'about_subtitle' => 'Integrity, discretion, and relentless advocacy.',
+    'our_story_title' => 'Our History',
+    'our_story_p1' => 'Founded in 1999, Weber & Partner has grown from a boutique litigation practice into a full-service commercial law firm representing national and international clients.',
+    'our_story_p2' => 'Our philosophy is simple: prevent disputes where possible, and win them where necessary. We serve as strategic partners to our clients.',
+    'mission_title' => 'Our Mission',
+    'mission_p' => 'To provide clear, actionable legal advice that empowers our clients to make secure business decisions.',
+    'team_title' => 'Our Attorneys',
+    'team_subtitle' => 'A team of highly specialized legal professionals.',
+
+    // Services Page (Practice Areas)
+    'services_title' => 'Practice Areas',
+    'services_subtitle' => 'Specialized legal representation for complex challenges.',
+    'service_learn_more' => 'Read more',
+
+    // Service Detail Page
+    'service_not_found' => 'Practice area not found.',
+    'service_back_link' => 'Back to Practice Areas',
+
+    // Portfolio Page (Case Studies)
+    'portfolio_title' => 'Case Studies & Successes',
+    'portfolio_subtitle' => 'A selection of our recent anonymized legal victories and successful transactions.',
+    'portfolio_all' => 'All Cases',
+    'portfolio_web' => 'Corporate',
+    'portfolio_app' => 'Litigation',
+    'portfolio_branding' => 'Employment',
+
+    // Blog Page (Insights)
+    'blog_title' => 'Legal Insights',
+    'blog_subtitle' => 'Updates on legislation, landmark rulings, and practical legal advice.',
+    'blog_featured_heading' => 'Featured Articles',
+    'blog_featured' => 'Featured',
+    'blog_recent_heading' => 'Latest Publications',
+    'blog_read_article' => 'Read Article',
+    'blog_post_not_found' => 'Article not found.',
+    'blog_back_link' => 'Back to Insights',
+
+    // Contact Page
+    'contact_title' => 'Contact Our Office',
+    'contact_subtitle' => 'Request a confidential consultation with one of our specialists.',
+    'contact_info_title' => 'Office Locations',
+    'contact_address' => 'Friedrichstraße 123<br>10117 Berlin, Germany',
+    'contact_phone' => '+49 (0) 30 1234 5678',
+    'contact_email' => 'kanzlei@weber-partner.de',
+    'contact_form_title' => 'Send an Inquiry',
+    'form_name' => 'Full Name',
+    'form_email' => 'Email Address',
+    'form_subject' => 'Subject',
+    'form_message' => 'Your Message (Please avoid sending sensitive documents via this form)',
+    'form_submit' => 'Send Message',
+    'gdpr_consent_label' => 'I agree that my data will be processed according to the <a href="/?page=datenschutz" class="text-accent hover:underline">Privacy Policy</a> to handle my request.',
+
+    // Footer
+    'footer_about' => 'Weber & Partner is a premier German law firm dedicated to providing exceptional legal counsel to businesses and individuals.',
+    'footer_links_title' => 'Quick Links',
+    'footer_contact_title' => 'Contact',
+    'footer_legal_title' => 'Legal Compliance',
+    'footer_impressum' => 'Impressum',
+    'footer_datenschutz' => 'Datenschutz',
+    'footer_rights' => 'All rights reserved.',
+    
+    // Cookie Banner
+    'cookie_text' => 'We use cookies to ensure the basic functionality of the website and to enhance your online experience. For more information, please read our <a href="/?page=datenschutz" class="text-accent hover:underline">Privacy Policy</a>.',
+    'cookie_accept' => 'Accept All',
+    'cookie_decline' => 'Essential Only'
+];

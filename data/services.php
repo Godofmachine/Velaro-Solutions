@@ -1,52 +1,52 @@
 <?php
-// Mock data for Services
+// Mock data for Services (Practice Areas / Rechtsgebiete)
 return [
     [
-        'id' => 'web-development',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>',
-        'title_en' => 'Web Development',
-        'title_de' => 'Webentwicklung',
-        'desc_en' => 'Custom, high-performance websites built with modern technologies.',
-        'desc_de' => 'Maßgeschneiderte, hochleistungsfähige Websites mit modernen Technologien.'
+        'id' => 'corporate-law',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>',
+        'title_en' => 'Corporate Law',
+        'title_de' => 'Gesellschaftsrecht',
+        'desc_en' => 'Comprehensive advice on formations, M&A transactions, restructuring, and corporate governance.',
+        'desc_de' => 'Umfassende Beratung bei Gründungen, M&A-Transaktionen, Umstrukturierungen und Corporate Governance.'
     ],
     [
-        'id' => 'ui-ux-design',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>',
-        'title_en' => 'UI/UX Design',
-        'title_de' => 'UI/UX Design',
-        'desc_en' => 'Intuitive and engaging user interfaces that delight your customers.',
-        'desc_de' => 'Intuitive und ansprechende Benutzeroberflächen, die Ihre Kunden begeistern.'
+        'id' => 'employment-law',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
+        'title_en' => 'Employment Law',
+        'title_de' => 'Arbeitsrecht',
+        'desc_en' => 'Drafting contracts, managing dismissals, and advising on collective labor agreements and works councils.',
+        'desc_de' => 'Vertragsgestaltung, Kündigungsmanagement und Beratung zu Tarifverträgen und Betriebsräten.'
     ],
     [
-        'id' => 'digital-strategy',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>',
-        'title_en' => 'Digital Strategy',
-        'title_de' => 'Digitale Strategie',
-        'desc_en' => 'Data-driven roadmaps to accelerate your digital transformation.',
-        'desc_de' => 'Datengesteuerte Roadmaps zur Beschleunigung Ihrer digitalen Transformation.'
+        'id' => 'commercial-law',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+        'title_en' => 'Commercial & Trade',
+        'title_de' => 'Handelsrecht',
+        'desc_en' => 'Structuring commercial contracts, distribution agreements, and national/international trade matters.',
+        'desc_de' => 'Gestaltung von Handelsverträgen, Vertriebsvereinbarungen und nationalen/internationalen Handelsfragen.'
     ],
     [
-        'id' => 'mobile-apps',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>',
-        'title_en' => 'Mobile Apps',
-        'title_de' => 'Mobile Apps',
-        'desc_en' => 'Native and cross-platform applications for iOS and Android.',
-        'desc_de' => 'Native und plattformübergreifende Anwendungen für iOS und Android.'
+        'id' => 'intellectual-property',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>',
+        'title_en' => 'Intellectual Property',
+        'title_de' => 'Gewerblicher Rechtsschutz',
+        'desc_en' => 'Protecting trademarks, patents, and copyrights, and defending against infringement claims.',
+        'desc_de' => 'Schutz von Marken, Patenten und Urheberrechten sowie Abwehr von Verletzungsansprüchen.'
     ],
     [
-        'id' => 'seo-optimization',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>',
-        'title_en' => 'SEO Optimization',
-        'title_de' => 'SEO-Optimierung',
-        'desc_en' => 'Improve your visibility and rank higher on search engines.',
-        'desc_de' => 'Verbessern Sie Ihre Sichtbarkeit und erzielen Sie ein höheres Ranking in Suchmaschinen.'
+        'id' => 'litigation',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>',
+        'title_en' => 'Litigation & Arbitration',
+        'title_de' => 'Prozessführung',
+        'desc_en' => 'Aggressive and strategic representation in state courts and international arbitration tribunals.',
+        'desc_de' => 'Nachdrückliche und strategische Vertretung vor staatlichen Gerichten und internationalen Schiedsgerichten.'
     ],
     [
-        'id' => 'cloud-solutions',
-        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>',
-        'title_en' => 'Cloud Solutions',
-        'title_de' => 'Cloud-Lösungen',
-        'desc_en' => 'Scalable cloud infrastructure and seamless migrations.',
-        'desc_de' => 'Skalierbare Cloud-Infrastruktur und nahtlose Migrationen.'
+        'id' => 'real-estate',
+        'icon' => '<svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+        'title_en' => 'Real Estate Law',
+        'title_de' => 'Immobilienrecht',
+        'desc_en' => 'Legal support for commercial property transactions, lease agreements, and construction law.',
+        'desc_de' => 'Rechtliche Begleitung bei gewerblichen Immobilientransaktionen, Mietverträgen und Baurecht.'
     ]
 ];

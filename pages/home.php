@@ -6,139 +6,126 @@ $services = require __DIR__ . '/../data/services.php';
 <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="Team Meeting" class="w-full h-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=1920&q=80" alt="Law Firm" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-60"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80"></div>
     </div>
     
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 reveal-hidden">
-        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight" data-i18n="home_hero_title">
-            <?php echo t('home_hero_title'); ?>
+        <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight" data-i18n="hero_title">
+            <?php echo t('hero_title'); ?>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light max-w-2xl mx-auto delay-100 reveal-hidden" data-i18n="home_hero_sub">
-            <?php echo t('home_hero_sub'); ?>
+        <p class="text-xl md:text-2xl text-gray-300 mb-10 font-light max-w-2xl mx-auto delay-100 reveal-hidden" data-i18n="hero_subtitle">
+            <?php echo t('hero_subtitle'); ?>
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4 delay-200 reveal-hidden">
-            <a href="/?page=services" class="bg-gradient-to-r from-accent to-yellow-500 text-white px-8 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(212,168,67,0.5)] transition shadow-lg hover:-translate-y-1 text-lg" data-i18n="home_hero_cta1"><?php echo t('home_hero_cta1'); ?></a>
-            <a href="/?page=contact" class="glass-panel text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-primary transition hover:-translate-y-1 text-lg" data-i18n="home_hero_cta2"><?php echo t('home_hero_cta2'); ?></a>
+            <a href="/?page=contact" class="bg-accent text-white px-8 py-4 rounded font-bold hover:bg-yellow-600 transition shadow-lg hover:-translate-y-1 text-lg uppercase tracking-wide" data-i18n="hero_cta1"><?php echo t('hero_cta1'); ?></a>
+            <a href="/?page=services" class="glass-panel text-white border border-white/30 px-8 py-4 rounded font-bold hover:bg-white hover:text-primary transition hover:-translate-y-1 text-lg uppercase tracking-wide" data-i18n="hero_cta2"><?php echo t('hero_cta2'); ?></a>
         </div>
     </div>
 </section>
 
 <!-- Stats Bar -->
-<section class="py-12 bg-white border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+<section class="py-12 bg-white border-b border-gray-200 shadow-sm relative z-20 -mt-10 mx-4 sm:mx-8 rounded-lg max-w-7xl lg:mx-auto">
+    <div class="px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
             <div class="p-4 reveal-hidden delay-100">
-                <div class="text-5xl font-bold text-primary mb-2 counter">250+</div>
-                <div class="text-gray-500 font-medium uppercase tracking-wide text-sm" data-i18n="home_stats_clients"><?php echo t('home_stats_clients'); ?></div>
+                <div class="text-4xl font-serif font-bold text-primary mb-2" data-i18n="stat_1_num"><?php echo t('stat_1_num'); ?></div>
+                <div class="text-gray-500 font-medium uppercase tracking-widest text-xs" data-i18n="stat_1_label"><?php echo t('stat_1_label'); ?></div>
             </div>
             <div class="p-4 reveal-hidden delay-200">
-                <div class="text-5xl font-bold text-primary mb-2 counter">400+</div>
-                <div class="text-gray-500 font-medium uppercase tracking-wide text-sm" data-i18n="home_stats_projects"><?php echo t('home_stats_projects'); ?></div>
+                <div class="text-4xl font-serif font-bold text-primary mb-2" data-i18n="stat_2_num"><?php echo t('stat_2_num'); ?></div>
+                <div class="text-gray-500 font-medium uppercase tracking-widest text-xs" data-i18n="stat_2_label"><?php echo t('stat_2_label'); ?></div>
             </div>
             <div class="p-4 reveal-hidden delay-300">
-                <div class="text-5xl font-bold text-primary mb-2 counter">15</div>
-                <div class="text-gray-500 font-medium uppercase tracking-wide text-sm" data-i18n="home_stats_years"><?php echo t('home_stats_years'); ?></div>
+                <div class="text-4xl font-serif font-bold text-primary mb-2" data-i18n="stat_3_num"><?php echo t('stat_3_num'); ?></div>
+                <div class="text-gray-500 font-medium uppercase tracking-widest text-xs" data-i18n="stat_3_label"><?php echo t('stat_3_label'); ?></div>
+            </div>
+            <div class="p-4 reveal-hidden delay-400">
+                <div class="text-4xl font-serif font-bold text-primary mb-2" data-i18n="stat_4_num"><?php echo t('stat_4_num'); ?></div>
+                <div class="text-gray-500 font-medium uppercase tracking-widest text-xs" data-i18n="stat_4_label"><?php echo t('stat_4_label'); ?></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Section -->
+<!-- Practice Areas Section -->
 <section class="py-24 bg-neutral-light">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 reveal-hidden">
             <h2 class="text-sm font-bold text-accent tracking-widest uppercase mb-3" data-i18n="home_services_title"><?php echo t('home_services_title'); ?></h2>
-            <p class="text-4xl font-bold text-primary" data-i18n="home_services_sub"><?php echo t('home_services_sub'); ?></p>
+            <p class="text-4xl font-serif font-bold text-primary" data-i18n="home_services_subtitle"><?php echo t('home_services_subtitle'); ?></p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <?php 
-            // Display only top 3 services on home
+            // Display only top 3 practice areas on home
             $top_services = array_slice($services, 0, 3);
+            $delay = 100;
             foreach($top_services as $service): 
             ?>
-            <a href="/?page=service-detail&id=<?php echo $service['id']; ?>" class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover-lift group reveal-hidden delay-100">
-                <div class="w-16 h-16 bg-blue-50/50 backdrop-blur text-accent rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+            <a href="/?page=service-detail&slug=<?php echo $service['id']; ?>" class="bg-white rounded p-8 border-t-4 border-accent shadow hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group reveal-hidden" style="transition-delay: <?php echo $delay; ?>ms;">
+                <div class="w-14 h-14 bg-neutral-light text-primary rounded mb-6 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition duration-300">
                     <?php echo $service['icon']; ?>
                 </div>
-                <h3 class="text-xl font-bold text-primary mb-3">
-                    <?php echo $lang === 'de' ? $service['title_de'] : $service['title_en']; ?>
-                </h3>
-                <p class="text-gray-600 mb-6">
-                    <?php echo $lang === 'de' ? $service['desc_de'] : $service['desc_en']; ?>
-                </p>
-                <div class="text-accent font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                    <span data-i18n="learn_more"><?php echo t('learn_more'); ?></span>
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                </div>
+                <h3 class="text-2xl font-serif font-bold text-primary mb-4"><?php echo $lang === 'de' ? $service['title_de'] : $service['title_en']; ?></h3>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed"><?php echo $lang === 'de' ? $service['desc_de'] : $service['desc_en']; ?></p>
+                <span class="text-accent font-bold inline-flex items-center gap-2 group-hover:gap-3 transition-all uppercase tracking-wide text-sm" data-i18n="service_learn_more">
+                    <?php echo t('service_learn_more'); ?> 
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </span>
             </a>
-            <?php endforeach; ?>
+            <?php 
+            $delay += 100;
+            endforeach; 
+            ?>
         </div>
-        <div class="text-center mt-12">
-            <a href="/?page=services" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition" data-i18n="nav_services"><?php echo t('nav_services'); ?></a>
+        
+        <div class="text-center mt-12 reveal-hidden delay-400">
+            <a href="/?page=services" class="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition uppercase tracking-widest text-sm border-b-2 border-accent pb-1">
+                <span data-i18n="nav_services"><?php echo t('nav_services'); ?></span>
+            </a>
         </div>
     </div>
 </section>
 
-<!-- About Teaser (Split Section) -->
+<!-- About Section -->
 <section class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row items-center gap-16">
             <div class="lg:w-1/2 relative reveal-hidden">
-                <div class="absolute -inset-4 bg-gradient-to-r from-accent/20 to-transparent rounded-3xl transform -rotate-3 blur-sm"></div>
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Modern Office" class="relative rounded-3xl shadow-2xl w-full h-[500px] object-cover" />
-            </div>
-            <div class="lg:w-1/2 reveal-hidden delay-200">
-                <h2 class="text-sm font-bold text-accent tracking-widest uppercase mb-3" data-i18n="home_about_title"><?php echo t('home_about_title'); ?></h2>
-                <p class="text-3xl md:text-5xl font-bold text-primary mb-6 leading-tight" data-i18n="home_about_headline">
-                    <?php echo t('home_about_headline'); ?>
-                </p>
-                <p class="text-gray-600 text-lg leading-relaxed mb-8" data-i18n="home_about_text">
-                    <?php echo t('home_about_text'); ?>
-                </p>
-                <a href="/?page=about" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-neutral-dark hover:-translate-y-1 transition shadow-lg inline-block" data-i18n="home_about_cta"><?php echo t('home_about_cta'); ?></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
-<section class="py-24 bg-primary text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 reveal-hidden">
-            <h2 class="text-3xl font-bold mb-4" data-i18n="home_testimonials_title"><?php echo t('home_testimonials_title'); ?></h2>
-            <div class="w-24 h-1 bg-accent mx-auto"></div>
-        </div>
-        
-        <div class="max-w-4xl mx-auto glass-panel-dark p-8 md:p-12 rounded-3xl relative reveal-hidden delay-200">
-            <svg class="absolute top-8 left-8 w-12 h-12 text-accent/30" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h2V8h-2zm16 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h2V8h-2z"/></svg>
-            <div class="relative z-10 text-center">
-                <p class="text-xl md:text-2xl font-light leading-relaxed mb-8" data-i18n="home_testimonial_quote">
-                    <?php echo t('home_testimonial_quote'); ?>
-                </p>
-                <div class="flex items-center justify-center gap-4">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Client" class="w-16 h-16 rounded-full border-2 border-accent object-cover" />
-                    <div class="text-left">
-                        <div class="font-bold text-lg">Dr. Elena Fischer</div>
-                        <div class="text-accent text-sm" data-i18n="home_testimonial_role"><?php echo t('home_testimonial_role'); ?></div>
-                    </div>
+                <div class="absolute -inset-4 bg-gray-100 rounded transform -rotate-3 z-0"></div>
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Lawyers Meeting" class="relative z-10 w-full rounded shadow-2xl" />
+                
+                <!-- Trust Badge -->
+                <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded shadow-xl z-20 max-w-[200px] text-center border-t-4 border-accent">
+                    <div class="text-3xl font-serif font-bold mb-1">1999</div>
+                    <div class="text-sm font-light text-gray-300">Established</div>
                 </div>
             </div>
+            
+            <div class="lg:w-1/2 reveal-hidden delay-200">
+                <h2 class="text-sm font-bold text-accent tracking-widest uppercase mb-3" data-i18n="nav_about"><?php echo t('nav_about'); ?></h2>
+                <h3 class="text-4xl font-serif font-bold text-primary mb-6 leading-tight" data-i18n="home_about_title"><?php echo t('home_about_title'); ?></h3>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed font-light" data-i18n="home_about_text">
+                    <?php echo t('home_about_text'); ?>
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 text-primary font-medium">
+                        <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Certified Legal Specialists (Fachanwälte)
+                    </li>
+                    <li class="flex items-center gap-3 text-primary font-medium">
+                        <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        International Reach & Network
+                    </li>
+                    <li class="flex items-center gap-3 text-primary font-medium">
+                        <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Highest Standards of Confidentiality
+                    </li>
+                </ul>
+                <a href="/?page=about" class="bg-primary text-white px-8 py-3 rounded font-bold hover:bg-accent transition shadow hover:-translate-y-1 inline-block uppercase tracking-wide text-sm" data-i18n="home_about_cta"><?php echo t('home_about_cta'); ?></a>
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="py-24 bg-accent relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-accent via-yellow-500 to-yellow-600"></div>
-    <!-- Decorative Circle -->
-    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
-    
-    <div class="relative max-w-4xl mx-auto px-4 text-center z-10 reveal-hidden">
-        <h2 class="text-5xl font-bold text-primary mb-6 tracking-tight" data-i18n="home_cta_title"><?php echo t('home_cta_title'); ?></h2>
-        <p class="text-2xl text-primary/80 mb-10 font-light" data-i18n="home_cta_sub"><?php echo t('home_cta_sub'); ?></p>
-        <a href="/?page=contact" class="bg-primary text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-neutral-dark hover:-translate-y-1 transition shadow-2xl inline-block" data-i18n="home_cta_button"><?php echo t('home_cta_button'); ?></a>
     </div>
 </section>

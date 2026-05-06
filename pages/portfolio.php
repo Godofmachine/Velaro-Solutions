@@ -2,42 +2,42 @@
 $portfolio_items = require __DIR__ . '/../data/portfolio.php';
 ?>
 
-<section class="py-20 bg-neutral-light border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 reveal-hidden">
-        <h1 class="text-5xl font-bold text-primary mb-6 tracking-tight" data-i18n="nav_portfolio"><?php echo t('nav_portfolio'); ?></h1>
-        <p class="text-xl max-w-2xl mx-auto font-light text-gray-600 delay-100 reveal-hidden">
-            <?php echo $lang === 'de' ? 'Entdecken Sie unsere jüngsten Erfolgsgeschichten.' : 'Explore our recent success stories.'; ?>
-        </p>
+<!-- Header -->
+<section class="py-24 bg-primary border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-hidden">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6" data-i18n="portfolio_title"><?php echo t('portfolio_title'); ?></h1>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto font-light" data-i18n="portfolio_subtitle"><?php echo t('portfolio_subtitle'); ?></p>
     </div>
 </section>
 
-<section class="py-20 bg-white min-h-screen">
+<!-- Portfolio Filter & Grid -->
+<section class="py-24 bg-neutral-light min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Filter Tabs -->
-        <div class="flex flex-wrap justify-center gap-4 mb-16 reveal-hidden delay-200">
-            <button class="filter-btn active px-8 py-3 rounded-full bg-primary text-white font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5" data-filter="all" data-i18n="filter_all"><?php echo t('filter_all'); ?></button>
-            <button class="filter-btn px-8 py-3 rounded-full bg-white text-gray-600 font-bold border border-gray-200 hover:border-primary hover:text-primary shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5" data-filter="web" data-i18n="filter_web"><?php echo t('filter_web'); ?></button>
-            <button class="filter-btn px-8 py-3 rounded-full bg-white text-gray-600 font-bold border border-gray-200 hover:border-primary hover:text-primary shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5" data-filter="branding" data-i18n="filter_branding"><?php echo t('filter_branding'); ?></button>
-            <button class="filter-btn px-8 py-3 rounded-full bg-white text-gray-600 font-bold border border-gray-200 hover:border-primary hover:text-primary shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5" data-filter="app" data-i18n="filter_app"><?php echo t('filter_app'); ?></button>
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-4 mb-16 reveal-hidden">
+            <button class="filter-btn active px-6 py-2 rounded border border-gray-300 text-gray-600 font-medium hover:bg-primary hover:text-white hover:border-primary transition uppercase tracking-wide text-sm" data-filter="all" data-i18n="portfolio_all"><?php echo t('portfolio_all'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded border border-gray-300 text-gray-600 font-medium hover:bg-primary hover:text-white hover:border-primary transition uppercase tracking-wide text-sm" data-filter="web" data-i18n="portfolio_web"><?php echo t('portfolio_web'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded border border-gray-300 text-gray-600 font-medium hover:bg-primary hover:text-white hover:border-primary transition uppercase tracking-wide text-sm" data-filter="branding" data-i18n="portfolio_branding"><?php echo t('portfolio_branding'); ?></button>
+            <button class="filter-btn px-6 py-2 rounded border border-gray-300 text-gray-600 font-medium hover:bg-primary hover:text-white hover:border-primary transition uppercase tracking-wide text-sm" data-filter="app" data-i18n="portfolio_app"><?php echo t('portfolio_app'); ?></button>
         </div>
 
-        <!-- Portfolio Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10" id="portfolio-grid">
             <?php 
             $delay = 100;
             foreach($portfolio_items as $item): 
             ?>
-            <div class="portfolio-item group relative overflow-hidden rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 reveal-hidden" style="transition-delay: <?php echo $delay; ?>ms;" data-category="<?php echo $item['category']; ?>">
+            <div class="portfolio-item group relative bg-white border border-gray-200 overflow-hidden rounded shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 reveal-hidden" style="transition-delay: <?php echo $delay; ?>ms;" data-category="<?php echo $item['category']; ?>">
                 <div class="h-80 overflow-hidden bg-gray-100">
-                    <img src="https://images.unsplash.com/photo-<?php echo $item['image_id']; ?>?auto=format&fit=crop&w=800&q=80" alt="<?php echo $item['client']; ?>" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                    <img src="<?php echo $item['image_url']; ?>" alt="<?php echo $item['client']; ?>" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700" />
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-8">
-                    <span class="text-accent text-sm font-bold tracking-widest uppercase mb-2 transform translate-y-4 group-hover:translate-y-0 transition duration-500 delay-100"><?php echo $item['client']; ?></span>
-                    <h3 class="text-2xl font-bold text-white mb-3 transform translate-y-4 group-hover:translate-y-0 transition duration-500 delay-150">
+                <div class="p-8 border-t-4 border-transparent group-hover:border-accent transition-colors">
+                    <span class="text-accent text-xs font-bold tracking-widest uppercase mb-2 block"><?php echo $item['client']; ?></span>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-3">
                         <?php echo $lang === 'de' ? $item['title_de'] : $item['title_en']; ?>
                     </h3>
-                    <p class="text-gray-300 text-sm line-clamp-2 font-light transform translate-y-4 group-hover:translate-y-0 transition duration-500 delay-200">
+                    <p class="text-gray-600 text-sm line-clamp-3 font-light leading-relaxed">
                         <?php echo $lang === 'de' ? $item['desc_de'] : $item['desc_en']; ?>
                     </p>
                 </div>

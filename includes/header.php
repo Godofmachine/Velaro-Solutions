@@ -11,32 +11,33 @@ global $lang, $page;
     <title data-i18n="site_title"><?php echo t('site_title'); ?></title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Velaro Solutions - Premium Digital Agency providing web development, design, and strategy.">
+    <meta name="description" content="Weber & Partner Rechtsanwälte - Ihre Kanzlei für Wirtschaftsrecht, Arbeitsrecht und Vertragsrecht in Deutschland.">
     <link rel="alternate" hreflang="en" href="?lang=en" />
     <link rel="alternate" hreflang="de" href="?lang=de" />
-    <link rel="alternate" hreflang="x-default" href="?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="?lang=de" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS (CDN for Development, switch to build for Prod) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1B2B5B',
-                        accent: '#D4A843',
+                        primary: '#0B192C',
+                        accent: '#C5A059',
                         neutral: {
                             dark: '#111827',
                             light: '#F8FAFC'
                         }
                     },
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
                     }
                 }
             }
@@ -46,20 +47,20 @@ global $lang, $page;
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
-<body class="bg-neutral-light text-neutral-dark font-sans flex flex-col min-h-screen">
+<body class="bg-neutral-light text-neutral-dark font-sans flex flex-col min-h-screen selection:bg-accent selection:text-white">
 
 <!-- Skip to content link for Accessibility -->
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:text-primary focus:z-50">Skip to content</a>
 
 <!-- Navigation -->
-<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100/50">
+<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <a href="/" class="text-2xl font-bold text-primary flex items-center gap-2 group">
-                    <svg class="w-8 h-8 text-accent transform group-hover:rotate-12 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.3l6.5 13.7H5.5L12 6.3z"/></svg>
-                    <span>Velaro</span>
+                <a href="/" class="text-2xl font-serif font-bold text-primary flex items-center gap-3 group tracking-tight">
+                    <svg class="w-8 h-8 text-accent transform group-hover:scale-105 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+                    <span>Weber & Partner</span>
                 </a>
             </div>
 
