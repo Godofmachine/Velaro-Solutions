@@ -7,15 +7,15 @@ $services = require __DIR__ . '/../data/services.php';
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1920&q=80" alt="Law Firm" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-primary/90 dark:bg-[#050B14]/90 mix-blend-multiply transition-colors duration-300"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-primary dark:from-[#050B14] via-transparent to-transparent opacity-80 transition-colors duration-300"></div>
+        <div class="absolute inset-0 bg-primary/90 dark:bg-[#050B14]/70 mix-blend-multiply transition-colors duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary dark:from-[#050B14] via-transparent to-transparent opacity-80 dark:opacity-60 transition-colors duration-300"></div>
     </div>
     
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 reveal-hidden">
         <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 tracking-tight leading-tight" data-i18n="hero_title">
             <?php echo t('hero_title'); ?>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-300 dark:text-gray-400 mb-10 font-light max-w-2xl mx-auto delay-100 reveal-hidden" data-i18n="hero_subtitle">
+        <p class="text-xl md:text-2xl text-gray-300 dark:text-gray-200 mb-10 font-light max-w-2xl mx-auto delay-100 reveal-hidden" data-i18n="hero_subtitle">
             <?php echo t('hero_subtitle'); ?>
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4 delay-200 reveal-hidden">
