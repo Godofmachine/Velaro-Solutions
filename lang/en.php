@@ -1,7 +1,7 @@
 <?php
 return [
     // Global & Header
-    'site_title' => 'Weber & Partner | Corporate & Business Law Firm',
+    'site_title' => 'Velaro | Corporate & Business Law Firm',
     'nav_home' => 'Home',
     'nav_about' => 'The Firm',
     'nav_services' => 'Practice Areas',
@@ -23,7 +23,7 @@ return [
 
     // Home - About Section
     'home_about_title' => 'Decades of Excellence',
-    'home_about_text' => 'At Weber & Partner, we combine deep legal expertise with a pragmatic business approach. Our attorneys are recognized leaders in their respective fields, ensuring that you receive not just legal advice, but strategic advantages.',
+    'home_about_text' => 'At Velaro, we combine deep legal expertise with a pragmatic business approach. Our attorneys are recognized leaders in their respective fields, ensuring that you receive not just legal advice, but strategic advantages.',
     'home_about_cta' => 'Meet Our Attorneys',
 
     // Home - Stats
@@ -40,7 +40,7 @@ return [
     'about_title' => 'About The Firm',
     'about_subtitle' => 'Integrity, discretion, and relentless advocacy.',
     'our_story_title' => 'Our History',
-    'our_story_p1' => 'Founded in 1999, Weber & Partner has grown from a boutique litigation practice into a full-service commercial law firm representing national and international clients.',
+    'our_story_p1' => 'Founded in 1999, Velaro has grown from a boutique litigation practice into a full-service commercial law firm representing national and international clients.',
     'our_story_p2' => 'Our philosophy is simple: prevent disputes where possible, and win them where necessary. We serve as strategic partners to our clients.',
     'mission_title' => 'Our Mission',
     'mission_p' => 'To provide clear, actionable legal advice that empowers our clients to make secure business decisions.',
@@ -80,7 +80,7 @@ return [
     'contact_info_title' => 'Office Locations',
     'contact_address' => 'Friedrichstraße 123<br>10117 Berlin, Germany',
     'contact_phone' => '+49 (0) 30 1234 5678',
-    'contact_email' => 'kanzlei@weber-partner.de',
+    'contact_email' => 'kanzlei@velaro.de',
     'contact_form_title' => 'Send an Inquiry',
     'form_name' => 'Full Name',
     'form_email' => 'Email Address',
@@ -90,7 +90,7 @@ return [
     'gdpr_consent_label' => 'I agree that my data will be processed according to the <a href="/?page=datenschutz" class="text-accent hover:underline">Privacy Policy</a> to handle my request.',
 
     // Footer
-    'footer_about' => 'Weber & Partner is a premier German law firm dedicated to providing exceptional legal counsel to businesses and individuals.',
+    'footer_about' => 'Velaro is a premier German law firm dedicated to providing exceptional legal counsel to businesses and individuals.',
     'footer_links_title' => 'Quick Links',
     'footer_contact_title' => 'Contact',
     'footer_legal_title' => 'Legal Compliance',

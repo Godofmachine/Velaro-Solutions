@@ -25,7 +25,7 @@
             
             <h3>Hinweis zur verantwortlichen Stelle</h3>
             <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-            <p>Weber & Partner Rechtsanwälte<br>Friedrichstraße 123<br>10117 Berlin<br>Telefon: +49 (0) 30 1234 5678<br>E-Mail: kanzlei@weber-partner.de</p>
+            <p>Velaro Rechtsanwälte<br>Friedrichstraße 123<br>10117 Berlin<br>Telefon: +49 (0) 30 1234 5678<br>E-Mail: kanzlei@velaro.de</p>
 
             <h2>4. Datenerfassung auf dieser Website</h2>
             <h3>Cookies</h3>

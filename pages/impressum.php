@@ -7,7 +7,7 @@
         <div class="prose prose-lg prose-blue text-gray-700">
             <p><strong>Angaben gemäß § 5 TMG:</strong></p>
             <p>
-                Weber & Partner Rechtsanwälte<br>
+                Velaro Rechtsanwälte<br>
                 Friedrichstraße 123<br>
                 10117 Berlin<br>
                 Deutschland
@@ -19,7 +19,7 @@
             <p><strong>Kontakt:</strong></p>
             <p>
                 Telefon: +49 (0) 30 1234 5678<br>
-                E-Mail: kanzlei@weber-partner.de
+                E-Mail: kanzlei@velaro.de
             </p>
 
             <p><strong>Umsatzsteuer-ID:</strong></p>
