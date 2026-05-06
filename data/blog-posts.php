@@ -4,6 +4,7 @@ return [
     [
         'slug' => 'future-of-web-development-2026',
         'image_id' => '1498050108023-c5249f4df085',
+        'is_featured' => true,
         'date' => '2026-05-01',
         'author' => 'Sarah Schmidt',
         'title_en' => 'The Future of Web Development in 2026',
@@ -16,6 +17,7 @@ return [
     [
         'slug' => 'maximizing-roi-with-digital-strategy',
         'image_id' => '1460925895917-afdab827c52f',
+        'is_featured' => true,
         'date' => '2026-04-15',
         'author' => 'Markus Weber',
         'title_en' => 'Maximizing ROI with a Solid Digital Strategy',
@@ -28,6 +30,7 @@ return [
     [
         'slug' => 'power-of-minimalist-branding',
         'image_id' => '1523381235312-3c1a47759e00',
+        'is_featured' => true,
         'date' => '2026-03-28',
         'author' => 'Elena Fischer',
         'title_en' => 'The Power of Minimalist Branding',

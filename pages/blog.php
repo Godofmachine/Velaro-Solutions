@@ -14,46 +14,52 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
 <section class="py-20 bg-white min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <?php if (!empty($posts)): 
-            $featured = $posts[0];
+        <?php 
+        if (!empty($posts)): 
+            $featured_posts = array_filter($posts, function($p) { return isset($p['is_featured']) && $p['is_featured']; });
+            $regular_posts = array_filter($posts, function($p) { return !isset($p['is_featured']) || !$p['is_featured']; });
+            
+            if (!empty($featured_posts)):
         ?>
-        <!-- Featured Post -->
-        <div class="mb-16 reveal-hidden delay-100">
-            <a href="/?page=blog-post&slug=<?php echo $featured['slug']; ?>" class="group block">
-                <div class="relative h-[28rem] rounded-[2.5rem] overflow-hidden mb-6 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                    <img src="https://images.unsplash.com/photo-<?php echo $featured['image_id']; ?>?auto=format&fit=crop&w=1200&q=80" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-10 md:p-16 w-full md:w-3/4">
-                        <span class="bg-gradient-to-r from-accent to-yellow-500 text-white px-4 py-1.5 text-xs font-bold uppercase tracking-widest rounded-full mb-6 inline-block shadow-lg" data-i18n="blog_featured"><?php echo t('blog_featured'); ?></span>
-                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 group-hover:text-accent transition duration-300 leading-tight">
-                            <?php echo $lang === 'de' ? $featured['title_de'] : $featured['title_en']; ?>
-                        </h2>
-                        <div class="text-gray-200 text-sm flex items-center gap-4 font-medium">
-                            <span class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                                <?php echo date('M d, Y', strtotime($featured['date'])); ?>
-                            </span>
-                            <span class="text-accent">&bull;</span>
-                            <span class="flex items-center gap-2">
-                                <div class="w-6 h-6 rounded-full bg-accent text-primary flex items-center justify-center text-xs font-bold">
-                                    <?php echo substr($featured['author'], 0, 1); ?>
+        <!-- Featured Section -->
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold text-primary mb-8" data-i18n="blog_featured_heading"><?php echo $lang === 'de' ? 'Hervorgehobene Artikel' : 'Featured Stories'; ?></h2>
+            
+            <!-- Desktop Grid / Mobile Carousel Container -->
+            <div class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-8 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
+                <?php foreach($featured_posts as $post): ?>
+                <div class="min-w-[85vw] md:min-w-0 snap-center">
+                    <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>" class="group block h-full">
+                        <div class="relative h-[30rem] rounded-[2.5rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                            <img src="https://images.unsplash.com/photo-<?php echo $post['image_id']; ?>?auto=format&fit=crop&w=800&q=80" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-8 w-full">
+                                <span class="bg-accent text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4 inline-block shadow-lg" data-i18n="blog_featured"><?php echo t('blog_featured'); ?></span>
+                                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-accent transition duration-300 leading-tight">
+                                    <?php echo $lang === 'de' ? $post['title_de'] : $post['title_en']; ?>
+                                </h3>
+                                <div class="text-gray-200 text-sm flex items-center gap-3 font-medium">
+                                    <span class="flex items-center gap-2">
+                                        <?php echo date('M d, Y', strtotime($post['date'])); ?>
+                                    </span>
+                                    <span class="text-accent">&bull;</span>
+                                    <span><?php echo $post['author']; ?></span>
                                 </div>
-                                <?php echo $featured['author']; ?>
-                            </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </a>
+                <?php endforeach; ?>
+            </div>
         </div>
         <?php endif; ?>
 
         <!-- Recent Posts Grid -->
+        <h2 class="text-2xl font-bold text-primary mb-8" data-i18n="blog_recent_heading"><?php echo $lang === 'de' ? 'Neueste Beiträge' : 'Latest Insights'; ?></h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php 
             $delay = 100;
-            // Skip the first one if we showed it as featured
-            $recent_posts = array_slice($posts, 1);
-            foreach($recent_posts as $post): 
+            foreach($regular_posts as $post): 
             ?>
             <a href="/?page=blog-post&slug=<?php echo $post['slug']; ?>" class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group overflow-hidden flex flex-col reveal-hidden" style="transition-delay: <?php echo $delay; ?>ms;">
                 <div class="h-56 overflow-hidden relative">
@@ -83,5 +89,6 @@ $posts = require __DIR__ . '/../data/blog-posts.php';
             endforeach; 
             ?>
         </div>
+        <?php endif; ?>
     </div>
 </section>
